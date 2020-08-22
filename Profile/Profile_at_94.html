@@ -1,0 +1,216 @@
+<html>
+<head>
+<title>Profile_at_94</title>
+<style>
+body {
+  margin: 0px;
+  background: #ECEFF1;
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.box {
+  position: fixed;
+  width: 300px;
+  height: 350px;
+  left: calc(50% - 150px);
+  top: calc(50% - 175px);
+  border-radius: 2px;
+  background: #E3F2FD;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s ease;
+}
+.box:Hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: scale(1.05);
+}
+
+.img {
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  left: calc(50% - 125px);
+  top: calc(50% - 150px);
+  border-radius: 100%;
+  background-image: url('http://s7.favim.com/orig/150622/black-blue-candice-accola-color-Favim.com-2840027.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.bg-img-blur {
+  position: absolute;
+  background-image: url('http://s7.favim.com/orig/150622/black-blue-candice-accola-color-Favim.com-2840027.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(30px);
+  -webkit-filter: blur(30px);
+  -moz-filter: blur(30px);
+  -ms-filter: blur(30px);
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.box-text {
+  position: absolute;
+  bottom: -10px;
+  
+  background-image: url('http://s7.favim.com/orig/150622/black-blue-candice-accola-color-Favim.com-2840027.jpg');
+  background-attachment: fixed;
+  background-size: 250px;
+  background-position: center;
+  -webkit-text-fill-color: rgba(38,50,56,0.4);
+  -webkit-background-clip: text;
+  
+  font-size: 33px;
+  font-weight: bold;
+  font-family: Verdana;
+  text-align: center;
+  width: 100%;
+  cursor: default;
+  
+  transition: all 0.3s ease;
+}
+
+
+/** Customization **/
+
+form {
+  position: fixed;
+  width:250px;
+  right: 20px;
+  top: 20px;
+  font-family:Open Sans;
+}
+
+.cp {
+  margin: -3px;
+}
+
+input {
+  width:100%;
+  height:25px;
+  padding-left:5px;
+  border:0px;
+  outline: none;
+  border-radius:2px;
+  font-family:Open Sans;
+  background:transparent;
+  border-bottom:1px solid rgba(0,0,0,0.20);
+  transition: all 0.3s ease;
+}
+input:Focus {
+    border-bottom:1px solid #009688;
+}
+
+/*******************/
+.Subtitle {
+  position: absolute;
+  text-align: center;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #607D8B;
+  z-index: 999;
+  font-family: Roboto;
+  font-size: 19px;
+}
+
+.Title {
+  position:absolute;
+  width:350px;
+  color:#607D8B;
+  font-size:27px;
+  font-family:Open Sans;
+  text-align:left;
+  left:30px;
+  top:0px;
+}
+
+b {
+  font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<p Class="Title"><b>P</b>rofile <b>B</b>ox</p>
+
+<div class="box">
+  <div class="bg-img-blur"></div>
+  <div class="img"></div>
+  <p class="box-text">Candice Accola</p>
+</div>
+
+<form>
+  <p class="cp">Custom Image ( Insert URL )</p>
+  <input id="b-ci" placeholder="URL Here">
+  <br /><br />
+  <p class="cp">Bottom Text</p>
+  <input id="b-ct" maxlength="18" placeholder="Try to write something" Value="Candice Accola">
+  <br /><br />
+  <p class="cp">Custom Color</p>
+  <input id="b-cb" placeholder="Remember to add #, rgb() or hsl()">
+</form>
+
+<div class="Subtitle">
+  <p>Keyon - <a style="color:#00897B; text-decoration:none;" href="http://www.uplabs.com/KeyonLulu" target="_Blank">UpLabs</a></p>
+</div>
+<script>
+/** Image **/
+$("#b-ci").keyup(function() {
+  $(".img").css("background-Image", "url('" + $("#b-ci").val() + "')");
+  $(".bg-img-blur").css("background-Image", "url('" + $("#b-ci").val() + "')");
+  $(".box-text").css("background-Image", "url('" + $("#b-ci").val() + "')");
+});
+
+$("#b-ci").on('keyup', function(e) {
+  var ccType = $(this).val();
+  if (ccType == "") {
+    $('.img').css('background-image', 'url(http://s7.favim.com/orig/150622/black-blue-candice-accola-color-Favim.com-2840027.jpg)');
+    $('.bg-img-blur').css('background-image', 'url(http://s7.favim.com/orig/150622/black-blue-candice-accola-color-Favim.com-2840027.jpg)');
+    $('.box-text').css('background-image', 'url(http://s7.favim.com/orig/150622/black-blue-candice-accola-color-Favim.com-2840027.jpg)');
+  }
+})
+
+$(document).ready(function(){
+  $.adaptiveBackground.run();
+});
+
+/** Text **/
+
+$("#b-ct")
+  .keyup(function() {
+    var value = $(this).val();
+    $(".box-text").text(value);
+  })
+  .keyup();
+
+/** Background color **/
+
+$("#b-cb")
+  .keyup(function() {
+    var value = $(this).val();
+    $(".box").css('background-color',value);
+  })
+  .keyup();
+
+$("#b-ci").on('keyup', function(e) {
+  var ccType = $(this).val();
+  if (ccType == "") {
+    $(".box").css('background-color', '#E3F2FD');
+  }
+})
+</script>
+</body>
+</html>

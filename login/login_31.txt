@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>login_at_31</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="jquery-3.4.1.min.js"></script>
+
+<style>
+@import "compass/css3";
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/** * Colors */
+/** * Units */
+ [class*="entypo-"]:before {
+	 font-family: 'entypo', sans-serif;
+	 color: #c6adad;
+	 margin: 0.3em;
+}
+ body, html {
+	 background: #7c2c2c;
+	 color: #c6adad;
+	 font-size: 1em;
+	 font-family: 'Open sans', sans-serif;
+	 margin: 0;
+}
+ header {
+	 font-size: 1.3em;
+	 border-bottom: 0.05em solid #b3b3b3;
+	 height: 1.5em;
+	 clear: both;
+	 margin: 0.5em 0;
+}
+ header div {
+	 float: right;
+	 display: inline-block;
+}
+ a {
+	 text-decoration: none;
+	 color: inherit;
+}
+ div.login {
+	 margin: 0 0.5em;
+	 text-transform: uppercase;
+}
+ .loginbutton {
+	 width: 5.2em;
+	 padding: 1em;
+	 text-align: center;
+	 height: 1.6em;
+	 margin: 4.9em auto;
+	 background: #8f3333;
+	 cursor: pointer;
+	 transition: 1s ease-in-out;
+}
+ form {
+	 display: none;
+	 margin: -12em auto;
+	 position: relative;
+	 padding: 0.5em;
+	 width: 31em;
+	 font-size: 0.7em;
+}
+ form div {
+	 transition: 0.5s ease-in-out;
+	 display: inline-block;
+}
+ form div label {
+	 display: block;
+}
+ form div input[type="text"], form div input[type="password"] {
+	 background: #b3b3b3;
+	 border: 0.1em solid #b3b3b3;
+	 width: 8.1em;
+}
+ form div {
+	 padding: 0.5em;
+	 margin: 0 0.15em;
+}
+ form div input[type="text"]:focus, form div input[type="password"]:focus {
+	 outline: none;
+	 color: #4d4d4d;
+}
+ .activeloginbutton {
+	 transform: rotate(360deg) translate(-205%);
+}
+ .credit {
+	 position: absolute;
+	 bottom: 0;
+	 margin: 1em;
+}
+ form div:active, form div:hover, form div:focus {
+	 background: #692525;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="login"><a href="#">Login</a></div>
+  <div class="entypo-light-up"></div>
+  <div class="entypo-pencil"></div>  
+</header>
+<div class="loginbutton">LOGIN</div>
+<form action="#">
+  <div>
+    <label for="name">username</label>
+    <input type="text" name="name" id="name" />
+  </div>
+  <div>
+    <label for="password">password</label>
+    <input type="password" name="password" id="password" />
+  </div>
+</form>  
+<div class="credit">Inspired by Ozgun Tandiroglu's Dribbble <a href="http://dribbble.com/shots/1068722-Login">shot</a>.</div>
+<script>
+/* Inspired by Ozgun Tandiroglu's Dribbble Shot.
+ * http://dribbble.com/shots/1068722-Login
+ * 2013 by Kaushalya R. Mandaliya
+ * https://twitter.com/kmandalwala
+ * http://seebeetee.com
+ * For crazyness just change that rotate from 360deg to 3600deg...:P
+ * Thanks & Enjoy.
+ */
+$(".loginbutton").click(function(){
+  $(".loginbutton").toggleClass("activeloginbutton");
+  $("form").slideToggle(600);
+});
+</script>
+</body>
+</html>

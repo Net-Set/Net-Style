@@ -1,0 +1,234 @@
+<html>
+<head>
+	<title>home_at_30</title>
+	<style>
+	.menu {
+	 position: fixed;
+	 left: 3rem;
+	 top: 3rem;
+	 z-index: 500;
+	 height: 6rem;
+	 width: 6rem;
+	 padding: 0;
+	 border-radius: 50% 50% 50% 50%;
+	 transition: all 0.5s ease;
+}
+ .menu.is-active {
+	 height: 16rem;
+	 width: 16rem;
+	 background-color: rgba(255, 255, 255, 0);
+}
+ .menu-bg {
+	 position: absolute;
+	 top: 1.5rem;
+	 bottom: 1.5rem;
+	 left: 1.5rem;
+	 right: 1.5rem;
+	 height: auto;
+	 width: auto;
+	 border-radius: 50% 50% 50% 50%;
+	 background-color: rgba(255, 255, 255, 0.4);
+	 transition: all 0.5s ease;
+}
+ .menu-bg:before {
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 width: 3rem;
+	 height: 3rem;
+	 content: "";
+	 display: block;
+	 border-radius: 50%;
+	 background: #fff;
+	 opacity: 0.3;
+	 -webkit-backface-visibility: hidden;
+	 transition: opacity 0.3s ease 0s;
+	 transform-origin: center center;
+	 animation: wave-animate 2.8s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate 0.5s;
+}
+ .is-active .menu-bg {
+	 left: 0;
+	 top: 0;
+	 border-radius: 0 50% 50% 50%;
+	 background-color: rgba(255, 255, 255, 0.7);
+}
+ .is-active .menu-bg:before {
+	 opacity: 0;
+	 animation: none;
+	 transition: opacity 1s ease 0.5s;
+}
+ @keyframes wave-animate {
+	 0% {
+		 transform: scale(1.6);
+		 opacity: 0.2;
+	}
+	 20% {
+		 transform: scale(1.6);
+		 opacity: 0.2;
+	}
+	 100% {
+		 transform: scale(2.5);
+		 opacity: 0.1;
+	}
+}
+ .menu-toggle {
+	 position: absolute;
+	 left: 1.5rem;
+	 top: 1.5rem;
+	 width: 3rem;
+	 height: 0.9rem;
+	 padding: 1.05rem 0;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+	 align-items: center;
+	 cursor: pointer;
+	 transition: all 0.5s ease;
+}
+ .menu-toggle::before, .menu-toggle::after {
+	 content: '';
+	 height: 1px;
+	 width: 40%;
+	 background-color: #fff;
+	 transition: transform 0.15s ease;
+}
+ .menu-toggle .bar {
+	 width: 40%;
+	 height: 1px;
+	 background-color: #fff;
+	 display: block;
+	 transition: opacity 0.15s ease;
+}
+ .is-active .menu-toggle {
+	 left: 0;
+	 top: 0;
+	 justify-content: center;
+}
+ .is-active .menu-toggle .bar {
+	 opacity: 0;
+}
+ .is-active .menu-toggle::before, .is-active .menu-toggle::after {
+	 position: absolute;
+	 transform-origin: 50% 50%;
+}
+ .is-active .menu-toggle::before {
+	 transform: rotate(45deg);
+	 top: 50%;
+	 margin-top: -1px;
+}
+ .is-active .menu-toggle::after {
+	 transform: rotate(-45deg);
+	 top: 50%;
+	 margin-top: -1px;
+}
+ .menu-toggle:hover .menu-items {
+	 will-change: transform;
+}
+ .menu-items {
+	 height: 0;
+	 width: 0;
+	 overflow: hidden;
+	 opacity: 0;
+	 transition: opacity 0.5s ease 0.5s;
+}
+ .menu-items .menu-item {
+	 color: #fff;
+	 text-transform: uppercase;
+	 font-size: 1.2rem;
+	 line-height: 1.6;
+}
+ .is-active .menu-items {
+	 height: 11rem;
+	 width: 10rem;
+	 padding: 3rem 2rem 2rem 4rem;
+	 opacity: 1;
+}
+/* THEME */
+ html {
+	 height: 100%;
+}
+ body {
+	 background: linear-gradient(130deg, #f10d81, #048fee);
+	 background-size: 400% 400%;
+	 animation: gradient 16s ease infinite;
+}
+ div {
+	 font-size: 16px;
+	 line-height: 20px;
+	 font-family: Calibri;
+}
+ @keyframes gradient {
+	 0% {
+		 background-position: 5% 0%;
+	}
+	 50% {
+		 background-position: 96% 100%;
+	}
+	 100% {
+		 background-position: 5% 0%;
+	}
+}
+ 
+
+	</style>
+</head>
+<body>
+	<div class="menu">
+  <div class="menu-bg">
+    <div class="menu-items">
+      <div class="menu-item">Home</div>
+      <div class="menu-item">Explore</div>
+      <div class="menu-item">Tasks</div>
+      <div class="menu-item">Messages</div>
+      <div class="menu-item">Plans</div>
+    </div>
+  </div>
+  <div class="menu-toggle">
+    <div class="bar"></div>
+  </div>
+</div>
+
+	<script>
+	
+			var MenuToggle = function() {
+
+  var
+    toggle,
+    body;
+
+  var _init = function() {
+    toggle = document.querySelector('.menu-toggle');
+    menu   = document.querySelector('.menu');
+    body   = document.querySelector('body');
+
+    _addEventHandlers();
+  }
+
+  var _addEventHandlers = function() {
+    toggle.addEventListener('click', _toggle, false)
+  }
+
+  var _toggle = function() {
+    if(!body.classList.contains('menu-active')) {
+      body.classList.add('menu-active');
+      menu.classList.add('is-active');
+    } else {
+      var that = this;
+      setTimeout(function(){
+        body.classList.remove('menu-active');
+        menu.classList.remove('is-active');
+      }, 150);
+    }
+  }
+
+  return {
+    init: _init
+  }
+}();
+
+MenuToggle.init();
+	</script>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Profile_at_99</title>
+<style>
+* {
+  margin: 0;
+}
+
+.main-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, .5);
+}
+
+img {
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.card h2, .card h4, .card .descp {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.social a {
+  flex-grow: 1;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.descp {
+  text-align: justify;
+  text-justify: inner-word;
+}
+</style>
+
+</head>
+<body>
+<div class="main-cont">
+  <div class="card">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/79b4b108-977e-44b8-818c-33a8cd01bb81/d8u82s2-eb8215dc-ad36-419f-9790-26fd28ca8539.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc5YjRiMTA4LTk3N2UtNDRiOC04MThjLTMzYThjZDAxYmI4MVwvZDh1ODJzMi1lYjgyMTVkYy1hZDM2LTQxOWYtOTc5MC0yNmZkMjhjYTg1MzkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.OD7J2iGh2vJ4OevlhNpLbyWFelwLGv5_L6mqVwP3L48" />
+    <h2>The Flash</h2>
+    <h4>Flash of The Lightning</h4>
+    <div class="descp">
+      <p>Flash Got His Power After He Got Hit By The Lightning in his Forensic Lab.</p>
+    </div>
+    <div class="social">
+      <a
+         href="#"
+         class="fa-facebook"
+         style="background-color: #4267B2;"
+      ></a>
+      <a
+         href="#"
+         class="fa-instagram"
+         style="background-color: #c70039;"
+      ></a>
+      <a
+         href="#"
+         class="fa-linkedin"
+         style="background-color: #0077B5;"
+      ></a>
+      <a
+         href="#"
+         class="fa-github"
+         style="background-color: #24292E;"
+      ></a>
+    </div>
+  </div>
+</div>
+
+<script>
+</script>
+</body>
+</html>

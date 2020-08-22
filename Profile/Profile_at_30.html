@@ -1,0 +1,221 @@
+<html>
+<head>
+<title>Profile_at_30</title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+}
+
+.signature {
+  position: absolute;
+  bottom: -25px;
+  font-style: italic;
+  font-size: 12px;
+  color: #212121;
+  text-transform: none;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.background {
+  position: relative;
+  background: linear-gradient(to top right, #eebe6c 0%, #ca7c4e 100%);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-contect: space-between;
+  width: 300px;
+	height: 300px;
+	background: white;
+	box-shadow: 4px 8px 12px 0 rgba(0,0,0,0.3);
+  color: #786450;
+}
+
+.leftWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.photoWrapper {
+  position: relative;
+}
+
+.circleOne {
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  top: -5px;
+  left: -5px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color:  #786450 #786450 #786450 transparent;
+  transition: all 1.5s ease-in-out;
+}
+
+.photoWrapper:hover .circleOne {
+  transform: rotate(360deg);
+}
+
+.circleTwo {
+  position: absolute;
+  width: 89px;
+  height: 89px;
+  top: -8px;
+  left: -8px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #786450 transparent #786450 #786450;
+  transition: all 1.5s ease-in-out;
+}
+
+.photoWrapper:hover .circleTwo {
+  transform: rotate(-360deg);
+}
+
+.photo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.subtitleWrapper {
+  text-align: center;
+  padding: 10px 0 30px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.job {
+  font-size: 12px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: transparent;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #786450;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+  color: #786450;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #786450;
+  color: white;
+}
+
+.button:active, .button:focus {
+  outline: none;
+}
+
+.rightWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panelWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 99px;
+  width: 100px;
+  background-color: #f5e8df;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.panelWrapper:hover {
+  background-color: #e1cfc2;
+}
+
+.value {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.description {
+  text-transform: capitalize;
+  font-size: 11px;
+}
+</style>
+</head>
+<body>
+<div class="background">
+  <div class="cardWrapper">
+    <div class="leftWrapper">
+      <div class="photoWrapper">
+        <div class="circleOne"></div>
+        <div class="circleTwo"></div>
+        <img class="photo" src="http://codemenatalie.com/wp-content/uploads/2019/07/55771747_10211273889163635_5486337094437568512_o.jpg" alt="profile"></img>
+      </div>
+      <div class="subtitleWrapper">
+        <div class="name">Natalie</div>
+        <div class="job">Styling Wizard</div>
+      </div>
+      <div class="buttonsWrapper">
+        <button class="button">Follow</button>
+        <button class="button">Message</button>
+      </div>
+    </div>
+    <div class="rightWrapper">
+      <div class="panelWrapper">
+        <div class="value">523</div>
+        <div class="description">posts</div>
+      </div>
+      <div class="panelWrapper">
+        <div class="value">1387</div>
+        <div class="description">likes</div>
+
+      </div>
+      <div class="panelWrapper">
+        <div class="value">146</div>
+        <div class="description">followers</div>
+      </div>
+    </div>
+  </div>
+
+<a href="https://codemenatalie.com" class="signature" target="_blank">Created by CodeMeNatalie</a>
+</div>
+</body>
+</html>

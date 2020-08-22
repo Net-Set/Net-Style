@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>home_at_70</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="jquery-3.4.1.min.js"></script>
+
+<style>
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  font: 300 14px Consolas, system, monospace;
+  color: #fff;
+}
+
+.menu {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  background: #fff;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  z-index: 100;
+  overflow: hidden;
+}
+.menu nav {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  opacity: 0;
+  -moz-transition: all 250ms linear 250ms;
+  -o-transition: all 250ms linear 250ms;
+  -webkit-transition: all 250ms linear;
+  -webkit-transition-delay: 250ms;
+  transition: all 250ms linear 250ms;
+  pointer-events: none;
+}
+.menu nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.menu nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+.menu nav ul li a:hover {
+  background: #000;
+  color: #fff;
+}
+.menu .line {
+  height: 5px;
+  width: 40px;
+  background: #000;
+  position: absolute;
+  top: 22.5px;
+  left: 5px;
+  -moz-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+.menu .line:after, .menu .line:before {
+  content: ' ';
+  height: 5px;
+  width: 40px;
+  background: #000;
+  position: absolute;
+  -moz-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+.menu .line:before {
+  top: -10px;
+}
+.menu .line:after {
+  bottom: -10px;
+}
+.menu.active {
+  width: 100%;
+  height: 100%;
+}
+.menu.active nav {
+  opacity: 1;
+  pointer-events: all;
+}
+.menu.active .line {
+  background: transparent;
+}
+.menu.active .line:before {
+  background: #000;
+  -moz-transform: rotate(-405deg);
+  -ms-transform: rotate(-405deg);
+  -webkit-transform: rotate(-405deg);
+  transform: rotate(-405deg);
+  top: 0px;
+}
+.menu.active .line:after {
+  background: #000;
+  -moz-transform: rotate(405deg);
+  -ms-transform: rotate(405deg);
+  -webkit-transform: rotate(405deg);
+  transform: rotate(405deg);
+  bottom: 0px;
+}
+
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  width: 460px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="menu">
+  <div class="line"></div>
+  <nav>
+    <ul>
+      <li><a target="_parent" href="https://codepen.io/luigimannoni/pen/yyzBrM">WebGL Atom</a></li>
+      <li><a target="_parent" href="https://codepen.io/luigimannoni/pen/xbLgqB">WebGL Soundcloud Visualizer</a></li>
+      <li><a target="_parent" href="https://codepen.io/luigimannoni/pen/NPgGpX">Playing with particles and transparencies</a></li>
+      <li><a target="_parent" href="https://codepen.io/luigimannoni/pen/hInlF">Cube Soundcloud Visualizer</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="main">
+  <p>This is my page content</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur possimus odio, magnam sint aspernatur, nihil eum officia, non at qui esse consequatur porro vero! Sed debitis voluptatum, eligendi laudantium. Placeat!</p>
+</div>
+<script>
+	$('.menu').click(function(){
+  $this = $(this);
+  if ($this.hasClass('active')) {
+    $this.removeClass('active');
+  }
+  else {
+    $this.addClass('active');    
+  }
+
+  
+});
+</script>
+</body>
+</html>

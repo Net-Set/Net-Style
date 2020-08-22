@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>login_at_32
+</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="jquery-3.4.1.min.js"></script>
+
+<style>
+* {
+	 box-sizing: border-box;
+}
+ .container {
+	 width: 300px;
+	 margin: 40px auto 0;
+}
+ button {
+	 padding: 8px 15px;
+	 border: 0;
+	 outline: 0;
+	 color: #fff;
+	 background: #1bbc9b;
+	 font-size: 14px;
+	 text-transform: uppercase;
+	 border-radius: 4px;
+	 box-shadow: 0 4px 0 #18a689;
+}
+ button:active {
+	 margin-top: 2px;
+	 box-shadow: 0 2px 0 #18a689;
+}
+ .login-container {
+	 position: relative;
+}
+ .login-form {
+	 display: none;
+	 position: absolute;
+	 padding: 20px;
+	 margin-top: 10px;
+	 background: #ddd;
+	 border-radius: 4px;
+	 box-shadow: 0 4px 0 #d0d0d0;
+}
+ .login-form input {
+	 width: 100%;
+	 padding: 8px;
+	 margin-bottom: 10px;
+	 border: 0;
+	 outline: 0;
+	 background: #f1f1f1;
+	 font-weight: 300;
+	 font-style: italic;
+	 border-radius: 2px;
+}
+ .login-form input:last-child {
+	 margin-bottom: 0;
+}
+ .login-form input[type="submit"] {
+	 color: #fff;
+	 background: #1bbc9b;
+	 font-style: normal;
+	 box-shadow: 0 4px 0 #18a689;
+}
+ .open {
+	 display: block;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <button id="login-button">log in</button>
+  <div class="login-container">
+    <form class="login-form">
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+        <input type="submit" value="SUBMIT" />
+    </form>
+  </div>
+</div>
+<script>
+$('#login-button').click(function() {
+  $('.login-form').toggleClass('open');
+})
+</script>
+</body>
+</html>

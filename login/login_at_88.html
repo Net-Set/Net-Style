@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>login_at_88</title>
+<style>
+@import "compass";
+ @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,100);
+ html {
+	 position: relative;
+	 background: #ff4081;
+	 font-family: 'Roboto', sans-serif;
+}
+ .thumbur {
+	 width: 150px;
+	 height: 150px;
+	 position: relative;
+	 background-color: #efefef;
+}
+ .thumbur:before {
+	 content: '';
+	 position: absolute;
+	 width: 6px;
+	 height: 12px;
+	 background-color: #efefef;
+	 left: 50%;
+	 bottom: 50px;
+	 z-index: 5;
+}
+ .icon-lock {
+	 position: relative;
+	 width: 80px;
+	 height: 60px;
+	 background: #ffa000;
+	 margin: auto;
+}
+ .icon-lock:after {
+	 content: '';
+	 position: absolute;
+	 width: 50px;
+	 height: 35px;
+	 border: 9px solid #f57c00;
+	 border-bottom: none;
+	 bottom: 100%;
+	 left: 50%;
+}
+ .icon-lock:before {
+	 content: '';
+	 position: absolute;
+	 width: 12px;
+	 height: 12px;
+	 background-color: #efefef;
+	 left: 50%;
+	 top: 20px;
+}
+ .panel-lite {
+	 margin: 20px auto;
+	 max-width: 360px;
+	 background: #fff;
+	 padding: 45px 20px;
+	 position: relative;
+}
+ .panel-lite h4 {
+	 font-weight: 400;
+	 font-size: 24px;
+	 text-align: center;
+	 color: #ff4081;
+	 margin: 15px auto;
+}
+ .panel-lite a {
+	 display: inline-block;
+	 margin-top: 25px;
+	 text-decoration: none;
+	 color: #ff4081;
+	 font-size: 14px;
+}
+ .form-group {
+	 position: relative;
+	 font-size: 15px;
+	 color: #666;
+}
+ .form-group + .form-group {
+	 margin-top: 30px;
+}
+ .form-group .form-label {
+	 position: absolute;
+	 z-index: 1;
+	 left: 0;
+	 top: 5px;
+}
+ .form-group .form-control {
+	 width: 100%;
+	 position: relative;
+	 z-index: 3;
+	 height: 35px;
+	 background: none;
+	 border: none;
+	 padding: 5px 0;
+	 border-bottom: 1px solid #777;
+}
+ .form-group .form-control:invalid {
+	 outline: none;
+}
+ .form-group .form-control:focus, .form-group .form-control:valid {
+	 outline: none;
+	 color: #ff4081;
+	 border-color: #ff4081;
+}
+ .form-group .form-control:focus + .form-label, .form-group .form-control:valid + .form-label {
+	 font-size: 12px;
+}
+ .floating-btn {
+	 background: #ff4081;
+	 width: 60px;
+	 height: 60px;
+	 color: #fff;
+	 font-size: 32px;
+	 border: none;
+	 position: absolute;
+	 margin: auto;
+	 margin: auto;
+	 right: -30px;
+	 bottom: 90px;
+	 cursor: pointer;
+}
+ .floating-btn:focus, .floating-btn:active {
+	 outline: none;
+}
+ .icon-arrow {
+	 position: relative;
+	 width: 13px;
+	 height: 13px;
+	 border-right: 3px solid #fff;
+	 border-top: 3px solid #fff;
+	 display: block;
+	 margin: auto;
+}
+ .icon-arrow:after {
+	 content: '';
+	 position: absolute;
+	 width: 18px;
+	 height: 3px;
+	 background: #fff;
+	 left: -5px;
+	 top: 5px;
+}
+ 
+</style>
+</head>
+<body>
+<div class="panel-lite">
+    <div class="thumbur">
+        <div class="icon-lock"></div>
+    </div>
+    <h4>Login</h4>
+    <div class="form-group"><input class="form-control" required="required" /><label class="form-label">Username    </label></div>
+    <div class="form-group"><input class="form-control" type="password" required="required" /><label class="form-label">Password</label></div><a href="#">Forgot Password ?  </a><button class="floating-btn"><i class="icon-arrow"></i></button></div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>Profile_at_100</title>
+<style>
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+ * {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: "Lato", sans-serif;
+	 font-size: 16px;
+	 line-height: 1.7;
+	 display: grid;
+	 place-items: center;
+}
+ h1, h2, h3, h4, h5, h6 {
+	 color: #000;
+	 font-weight: 400;
+}
+ a {
+	 color: #fff;
+	 text-decoration: none;
+	 cursor: pointer;
+}
+ a:hover {
+	 color: #777;
+	 text-decoration: underline;
+}
+ ul, ol {
+	 padding: 0;
+	 margin: 0;
+	 list-style: none;
+}
+ button, input, optgroup, select, textarea {
+	 font-family: "Lato", sans-serif !important;
+}
+ .container {
+	 background: lightcoral;
+	 width: 20rem;
+	 margin: 2em 0;
+	 padding: 2em 1em;
+	 border-radius: 50px;
+	 position: relative;
+}
+ .title {
+	 font-size: 4rem;
+	 font-weight: 300;
+	 text-align: center;
+}
+ .user-profile {
+	 text-align: center;
+}
+ .avatar-container {
+	 width: 15rem;
+	 height: 15rem;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 margin: 0 auto;
+	 border-radius: 50%;
+	 background-image: url(https://bit.ly/2npgQy5);
+	 background-position: center;
+	 background-size: cover;
+}
+ .avatar-container .avatar {
+	 width: 12rem;
+	 height: 12rem;
+	 border-radius: 50%;
+}
+ .user-name {
+	 font-size: 2.3rem;
+	 font-weight: 700;
+	 text-transform: capitalize;
+}
+ .hobbies {
+	 display: flex;
+	 justify-content: space-between;
+}
+ .hobbies .hobby {
+	 margin-right: 0.4em;
+	 font-size: 0.8rem;
+	 text-transform: capitalize;
+	 font-weight: bold;
+}
+ .user-info {
+	 display: flex;
+	 justify-content: space-evenly;
+	 text-align: center;
+	 padding: 30px 0 15px;
+	 margin-top: -15px;
+	 color: #fff;
+}
+ .user-info h3 {
+	 font-size: 2rem;
+	 color: #fff;
+	 margin-bottom: -1.2rem;
+}
+ .user-info small {
+	 font-weight: 100;
+	 font-size: 0.6rem;
+	 font-weight: 700;
+	 letter-spacing: 1px;
+	 text-transform: uppercase;
+}
+ .latest-tweet {
+	 width: 12rem;
+}
+ .latest-tweet h4 {
+	 color: #ddd;
+	 text-transform: uppercase;
+	 font-size: 0.6rem;
+	 letter-spacing: 1px;
+}
+ .latest-tweet .tweet {
+	 color: #fff;
+	 font-size: 0.8rem;
+	 font-weight: 700;
+	 letter-spacing: 1px;
+}
+ .btn {
+	 font-size: 2rem;
+	 width: 70px;
+	 height: 70px;
+	 border: none;
+	 border-radius: 50%;
+	 background: #fff;
+	 color: lightcoral;
+	 position: absolute;
+	 right: 10px;
+	 bottom: 20px;
+}
+ .btn:hover {
+	 border: 1px solid #fff;
+	 background: transparent;
+	 color: #fff;
+}
+ 
+</style>
+
+</head>
+<body>
+<div class="container">
+  <h1 class="title">Profile</h1>
+  <div class="user-profile">
+    <div class="avatar-container">
+      <img src="https://images.pexels.com/photos/756453/pexels-photo-756453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="avatar" />
+    </div>
+
+    <h2 class="user-name">lisa johnoson</h2>
+    <ul class="hobbies">
+      <li class="hobby">design director,</li>
+      <li class="hobby">Artist,</li>
+      <li class="hobby">Musician,</li>
+      <li class="hobby">Traveler</li>
+    </ul>
+  </div>
+
+  <div class="user-info">
+    <div class='followers'>
+      <h3>236</h3>
+      <small>followers</small>
+    </div>
+    <div class="following">
+      <h3>38</h3>
+      <small>following</small>
+    </div>
+
+    <div class="number-of-posts">
+      <h3>27</h3>
+      <small>posts</small>
+    </div>
+  </div>
+
+  <div class="latest-tweet">
+    <h4><i class="fab fa-twitter"></i> Latest Tweet</h4>
+    <p class="tweet">My first project for #100week100projects</p>
+  </div>
+
+  <button class="btn"><i class="fas fa-comment"></i></button>
+</div>
+<script>
+</script>
+</body>
+</html>

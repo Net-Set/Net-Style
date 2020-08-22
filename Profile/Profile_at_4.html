@@ -1,0 +1,419 @@
+<html>
+<head>
+<title>Profile_at_4</title>
+<style>
+.position, .location {
+	 color: #573545;
+	 font-size: 1.2em;
+	 line-height: 140%;
+}
+ .details-container {
+	 color: #573545;
+	 margin-top: 20px;
+}
+ .contributions {
+	 display: flex;
+	 flex-direction: row;
+}
+ .contributions div {
+	 flex-basis: 50%;
+}
+ .contributions {
+	 margin-top: 10px;
+}
+ .contributions-count {
+	 font-weight: bold;
+	 font-size: 2em;
+}
+ .contributions-label {
+	 text-transform: uppercase;
+	 letter-spacing: 1.1;
+	 font-size: 0.8em;
+}
+ .tooltip {
+	 margin-left: -30px;
+	 margin-top: 10px;
+	 font-size: 0.4em;
+	 line-height: 1.4em;
+	 padding: 5px 2px;
+	 color: white;
+	 background-color: #573545;
+	 border-radius: 5px;
+	 width: 100px;
+	 text-align: center;
+	 box-shadow: 2px 2px 30px 4px rgba(0, 0, 0, 0.4);
+	 transition: opacity, 0.3s, ease-in-out;
+}
+ .contact {
+	 margin-bottom: 10px;
+}
+ .name {
+	 font-size: 3em;
+	 font-weight: bold;
+	 width: 80%;
+	 display: inline-block;
+	 vertical-align: middle;
+}
+ .contributions-list {
+	 margin-top: 30px;
+}
+ .contributions-list h3 {
+	 font-size: 1.6em;
+}
+ .contribution-title {
+	 font-weight: bold;
+	 font-size: 1.2em;
+}
+ .contribution-description {
+	 margin: 5px auto 10px;
+}
+ .big-margin {
+	 margin-top: 40px;
+}
+ .add-friend {
+	 width: 50px;
+	 height: 50px;
+	 display: inline-block;
+	 vertical-align: middle;
+	 text-align: center;
+	 font-size: 2em;
+	 line-height: 1.5em;
+	 border-radius: 50%;
+	 border: 1px solid #439397;
+	 color: #439397;
+	 font-weight: bold;
+	 cursor: pointer;
+	 transition: color, border, background-color, 0.3s, ease-in-out;
+}
+ .add-friend:hover {
+	 background-color: #439397;
+	 color: white;
+}
+ .profile-content {
+	 padding: 20px 15px;
+}
+ .cover-bg-container {
+	 width: 400px;
+	 height: 150px;
+	 position: relative;
+	 border-bottom: 1px solid #becece;
+	 overflow-y: hidden;
+}
+ .cover-bg {
+	 background-image: url("https://s11.postimg.org/uj7c0wboz/IMG_5982_small.jpg");
+	 background-size: cover;
+	 background-position-y: 45%;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+}
+ .profile-card {
+	 width: 400px;
+	 height: 600px;
+	 background: white;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translateX(-50%) translateY(-50%);
+	 box-shadow: 2px 4px 20px 2px rgba(0, 0, 0, 0.3);
+	 overflow-y: auto;
+}
+ #app {
+	 background: #56a8b4;
+	 background-image: radial-gradient(center, #56a8b4 30%, #439397 70%, #446b79);
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+}
+ html {
+	 height: 100%;
+}
+ body {
+	 min-height: 100%;
+	 font-family: Lato, sans-serif;
+	 font-weight: 300;
+}
+
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+"use strict";
+
+function _instanceof(left, right) { if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) { return !!right[Symbol.hasInstance](left); } else { return left instanceof right; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!_instanceof(instance, Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var Cover =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Cover, _React$Component);
+
+  function Cover() {
+    _classCallCheck(this, Cover);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Cover).apply(this, arguments));
+  }
+
+  _createClass(Cover, [{
+    key: "getStyle",
+    value: function getStyle() {
+      var scrollTop = this.props.scrollTop;
+      var blurAmount = this.props.scrollTop != 0 ? Math.pow(60 / this.props.scrollTop, 0.3) : 1;
+      return {
+        transform: "translate3d(0, ".concat(scrollTop / 2, "px, 0)"),
+        opacity: blurAmount
+      };
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var style = this.getStyle();
+      return React.createElement("div", {
+        className: "cover-bg-container"
+      }, React.createElement("div", {
+        className: "cover-bg",
+        ref: "cover",
+        style: style
+      }));
+    }
+  }]);
+
+  return Cover;
+}(React.Component);
+
+var ToolTip =
+/*#__PURE__*/
+function (_React$Component2) {
+  _inherits(ToolTip, _React$Component2);
+
+  function ToolTip() {
+    _classCallCheck(this, ToolTip);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ToolTip).apply(this, arguments));
+  }
+
+  _createClass(ToolTip, [{
+    key: "getStyle",
+    value: function getStyle() {
+      var opacity = this.props.show ? 1 : 0;
+      return {
+        opacity: opacity
+      };
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var style = this.getStyle();
+      return React.createElement("div", {
+        className: "tooltip",
+        style: style
+      }, "Add Giuseppe as a friend");
+    }
+  }]);
+
+  return ToolTip;
+}(React.Component);
+
+var Details =
+/*#__PURE__*/
+function (_React$Component3) {
+  _inherits(Details, _React$Component3);
+
+  function Details() {
+    _classCallCheck(this, Details);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Details).apply(this, arguments));
+  }
+
+  _createClass(Details, [{
+    key: "render",
+    value: function render() {
+      var contributions = [{
+        title: 'Phonos Music Explorer',
+        description: 'An interactive web application for exploring a music catalogue'
+      }, {
+        title: 'Essentia',
+        description: 'A C++ library for sound analysis'
+      }];
+      var languages = [{
+        title: 'Javascript',
+        description: 'React.js, D3, WebAudioAPI, WebRTC, Redux'
+      }, {
+        title: 'Python',
+        description: 'Django, Flask, Scikitlearn'
+      }];
+      return React.createElement("div", {
+        className: "details-container"
+      }, React.createElement("div", {
+        className: "bio"
+      }, "Learning everyday something new."), React.createElement("div", {
+        className: "contributions"
+      }, React.createElement("div", {
+        className: "own-repos"
+      }, React.createElement("div", {
+        className: "contributions-count"
+      }, "8"), React.createElement("div", {
+        className: "contributions-label"
+      }, "Repositories")), React.createElement("div", {
+        className: "others-repos"
+      }, React.createElement("div", {
+        className: "contributions-count"
+      }, "26"), React.createElement("div", {
+        className: "contributions-label"
+      }, "Contributed to"))), React.createElement("div", {
+        className: "contributions-list"
+      }, React.createElement("h3", null, "Main contributions"), contributions.map(function (contribObj) {
+        return React.createElement("div", null, React.createElement("div", {
+          className: "contribution-title"
+        }, contribObj.title), React.createElement("div", {
+          className: "contribution-description"
+        }, contribObj.description));
+      }), React.createElement("h3", {
+        className: "big-margin"
+      }, "Main languages"), languages.map(function (contribObj) {
+        return React.createElement("div", null, React.createElement("div", {
+          className: "contribution-title"
+        }, contribObj.title), React.createElement("div", {
+          className: "contribution-description"
+        }, contribObj.description));
+      })));
+    }
+  }]);
+
+  return Details;
+}(React.Component);
+
+var Profile =
+/*#__PURE__*/
+function (_React$Component4) {
+  _inherits(Profile, _React$Component4);
+
+  function Profile(props) {
+    var _this;
+
+    _classCallCheck(this, Profile);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Profile).call(this, props));
+    _this.toggleToolTip = _this.toggleToolTip.bind(_assertThisInitialized(_this));
+    _this.state = {
+      showToolTip: false
+    };
+    return _this;
+  }
+
+  _createClass(Profile, [{
+    key: "toggleToolTip",
+    value: function toggleToolTip() {
+      this.setState({
+        showToolTip: !this.state.showToolTip
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return React.createElement("div", {
+        className: "profile-content"
+      }, React.createElement("div", {
+        className: "contact"
+      }, React.createElement("div", {
+        className: "name"
+      }, "Giuseppe Bandiera"), React.createElement("div", {
+        title: "Add as a friend",
+        className: "add-friend",
+        onMouseEnter: this.toggleToolTip,
+        onMouseLeave: this.toggleToolTip
+      }, "+", React.createElement(ToolTip, {
+        show: this.state.showToolTip
+      }))), React.createElement("div", {
+        className: "position"
+      }, "Software engineer, Music Technology Group"), React.createElement("div", {
+        className: "location"
+      }, "Barcelona"), React.createElement(Details, null));
+    }
+  }]);
+
+  return Profile;
+}(React.Component);
+
+var App =
+/*#__PURE__*/
+function (_React$Component5) {
+  _inherits(App, _React$Component5);
+
+  function App(props) {
+    var _this2;
+
+    _classCallCheck(this, App);
+
+    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
+    _this2.state = {
+      scrollTop: 0
+    };
+    return _this2;
+  }
+
+  _createClass(App, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this3 = this;
+
+      this.ticking = false;
+      this.lastScrolledPosition = 0;
+      this.refs.card.addEventListener('scroll', function (event) {
+        _this3.lastScrolledPosition = _this3.refs.card.scrollTop;
+
+        if (!_this3.ticking) {
+          window.requestAnimationFrame(function () {
+            _this3.setState({
+              scrollTop: _this3.lastScrolledPosition
+            });
+
+            _this3.ticking = false;
+          });
+        }
+
+        _this3.ticking = true;
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return React.createElement("div", {
+        className: "profile-card",
+        ref: "card"
+      }, React.createElement(Cover, {
+        scrollTop: this.state.scrollTop
+      }), React.createElement(Profile, null));
+    }
+  }]);
+
+  return App;
+}(React.Component);
+
+React.render(React.createElement(App, null), document.getElementById('app'));
+
+</script>
+</body>
+</html>

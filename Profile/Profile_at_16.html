@@ -1,0 +1,346 @@
+<html>
+<head>
+<title>Profile_at_16</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="jquery-3.4.1.min.js"></script>
+
+<style>
+@import "https://fonts.googleapis.com/css?family=Nunito:200,300,400,700";
+ p {
+	 color: #fff;
+	 letter-spacing: 1px;
+	 font-size: 10px;
+	 line-height: 5px;
+	 font-weight: 200;
+}
+ p.name {
+	 font-size: 12px;
+	 line-height: 10px;
+	 font-weight: 400;
+}
+ h3 {
+	 color: #fff;
+	 letter-spacing: 1px;
+	 line-height: 10px;
+}
+ .wrapper {
+	 width: 100%;
+	 height: auto;
+	 position: absolute;
+	 text-align: center;
+	 font-family: nunito;
+	 left: 0;
+	 right: 0;
+	 top: 20%;
+}
+ .wrapper .card-wrapper {
+	 perspective: 1000px;
+	 display: inline-block;
+	 margin: 20px 60px;
+}
+ .wrapper .card-wrapper .card-group {
+	 width: 300px;
+	 position: relative;
+	 margin: 0 auto;
+	 height: 300px;
+	 box-shadow: 0 20px 80px 0 rgba(48, 25, 131, 0.4), 0 0 1px 0 rgba(48, 25, 131, 0.25);
+	 border-radius: 10px;
+	 transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.35s ease-in-out;
+}
+ .wrapper .card-wrapper .card-group.reduce {
+	 height: 270px;
+}
+ .wrapper .card-wrapper .card-group.reduce .card-front {
+	 height: 270px;
+}
+ .wrapper .card-wrapper .card-group.in {
+	 transform: translateY(100px) translateZ(200px) rotateX(40deg) scale(0.9);
+}
+ .wrapper .card-wrapper .card-group.on {
+	 transform: translateY(100px) rotateX(40deg) scale(0.9);
+}
+ .wrapper .card-wrapper .card-group .card-front {
+	 transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	 width: 300px;
+	 position: absolute;
+	 top: 0;
+	 height: 300px;
+	 margin: 0 auto;
+	 cursor: pointer;
+	 background: linear-gradient(-35deg, #4e2bcc 3%, #b620e0 100%);
+	 border-radius: 10px;
+}
+ .wrapper .card-wrapper .card-group .card-front.red {
+	 background: linear-gradient(-35deg, #9119b3 0%, #e64c4c 88%);
+}
+ .wrapper .card-wrapper .card-group .card-front.blue {
+	 background: linear-gradient(-35deg, #289dcc 3%, #815eff 94%);
+}
+ .wrapper .card-wrapper .card-group .card-front.on {
+	 transform: translate(0, -70px) rotateX(40deg) scale(1.125) rotateX(-20deg);
+}
+ .wrapper .card-wrapper .card-group .card-front .tools {
+	 width: 300px;
+	 height: 50px;
+	 box-sizing: border-box;
+	 padding: 20px;
+}
+ .wrapper .card-wrapper .card-group .card-front .tools span {
+	 font-size: 24px;
+	 color: #fff;
+}
+ .wrapper .card-wrapper .card-group .card-front .tools .tool {
+	 border-radius: 10px;
+	 height: 30px;
+	 display: inline;
+}
+ .wrapper .card-wrapper .card-group .card-front .tools .tool.onshadow {
+	 box-shadow: 0px 35px 15px 0 rgba(48, 25, 131, 0.2);
+}
+ .wrapper .card-wrapper .card-group .card-front .tools .tool.onshadow.gear {
+	 background: transparent;
+	 transform: translateY(-13px);
+}
+ .wrapper .card-wrapper .card-group .card-front .tools .tool.onshadow.edit {
+	 transform: translateY(-5px);
+	 box-shadow: -3px 35px 15px 0 rgba(48, 25, 131, 0.2);
+}
+ .wrapper .card-wrapper .card-group .card-front .tools .tool.gear {
+	 float: left;
+	 text-align: left;
+}
+ .wrapper .card-wrapper .card-group .card-front .tools .tool.edit {
+	 float: right;
+	 text-align: right;
+}
+ .wrapper .card-wrapper .card-group .card-front .profile {
+	 width: 100%;
+}
+ .wrapper .card-wrapper .card-group .card-front .profile.onshadow .p-picture-wrapper {
+	 transform: translateY(-35px);
+	 box-shadow: 0px 65px 20px 0 rgba(48, 25, 131, 0.2);
+}
+ .wrapper .card-wrapper .card-group .card-front .profile .p-picture-wrapper {
+	 width: 100px;
+	 height: 100px;
+	 background: #fff;
+	 border: 3px solid #fff;
+	 overflow: hidden;
+	 border-radius: 100%;
+	 position: relative;
+	 margin: 0 auto;
+	 transform: translateY(-10px);
+}
+ .wrapper .card-wrapper .card-group .card-front .profile .p-picture-wrapper.rounded {
+	 border-radius: 20px;
+}
+ .wrapper .card-wrapper .card-group .card-front .profile .p-picture-wrapper .p-picture {
+	 width: 100%;
+	 position: relative;
+	 top: -10px;
+}
+ .wrapper .card-wrapper .card-group .card-front .profile .p-info {
+	 text-align: center;
+	 padding: 0px 0px;
+}
+ .wrapper .card-wrapper .card-group .card-front .profile .p-info.m-top {
+	 margin-top: 10px !important;
+}
+ .wrapper .card-wrapper .card-group .card-front .profile .p-info.onshadow p {
+	 text-shadow: 0 12px 15px rgba(48, 25, 131, 0.75);
+}
+ .wrapper .card-wrapper .card-group .card-front .profile .p-info p {
+	 display: inline;
+	 line-height: 0px;
+}
+ .wrapper .card-wrapper .card-group .card-front .p-social-info.onshadow ul li h3, .wrapper .card-wrapper .card-group .card-front .p-social-info.onshadow ul li p, .wrapper .card-wrapper .card-group .card-front .p-social-info.onshadow ul li i {
+	 text-shadow: 0 28px 15px rgba(48, 25, 131, 0.75);
+}
+ .wrapper .card-wrapper .card-group .card-front .p-social-info ul {
+	 list-style-type: none;
+	 margin: 10px auto 0px auto;
+	 text-align: center;
+	 padding: 0px;
+}
+ .wrapper .card-wrapper .card-group .card-front .p-social-info ul.social {
+	 margin: 30px auto 0px auto;
+}
+ .wrapper .card-wrapper .card-group .card-front .p-social-info ul.social li {
+	 padding: 0px 30px;
+}
+ .wrapper .card-wrapper .card-group .card-front .p-social-info ul li {
+	 text-align: center;
+	 display: inline-block;
+	 padding: 0px 20px;
+	 background: transparent;
+}
+ .wrapper .card-wrapper .card-group .card-front .p-social-info ul li i {
+	 color: #fff;
+	 background: transparent;
+	 font-size: 24px;
+}
+ .hover.down {
+	 animation: symbolhovering 2s infinite alternate;
+}
+ .bounce {
+	 transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+ .hover-first {
+	 transition: all ease 2s;
+}
+ .hover-first.act {
+	 animation: hoverdown 4s infinite alternate;
+}
+ .hover-second {
+	 transition: all ease 2s;
+}
+ .hover-second.act {
+	 animation: hovertop 4s infinite alternate;
+}
+ @keyframes symbolhovering {
+	 0% {
+		 transform: translate(0, -5px) scale(1);
+	}
+	 100% {
+		 transform: translate(0, -10px) scale(1);
+	}
+}
+ @keyframes hovertop {
+	 0% {
+		 transform: translate(0, 0px) scale(1);
+	}
+	 100% {
+		 transform: translate(0, 10px) scale(1);
+	}
+}
+ @keyframes hoverdown {
+	 0% {
+		 transform: translate(0, 0px) scale(1);
+	}
+	 100% {
+		 transform: translate(0, -10px) scale(1);
+	}
+}
+ 
+</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+  <div class="card-wrapper">
+    <div class="card-group">
+      <div class="c-group-wrapper bounce hover">
+        <div class="card-front">
+          <div class="tools hover-first">
+            <div class="tool bounce gear">
+              <span class="fa fa-gear"></span>
+            </div>
+            <div class="tool bounce edit">
+              <span class="fa fa-edit"></span>
+            </div>
+          </div>
+          <div class="profile bounce">
+            <div class="hover-second">
+              <div class="p-picture-wrapper bounce">
+                <img class="p-picture" src="https://images.unsplash.com/photo-1541418950054-c12804e149d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"/>
+              </div>
+            </div>
+            <div class="p-info m-top bounce hover-first">
+              <p class="name">Dicki Prima</p>
+            </div>
+            <div class="p-info bounce hover-first">
+              <p>Yogyakarta, Indonesia</p>
+            </div>
+          </div>
+          <div class="p-social-info bounce">
+            <ul class="hover-second social">
+              <li>
+                <i class="bounce fa fa-dribbble"></i>
+              </li>
+              <li>
+                <i class="bounce fa fa-facebook"></i>
+              </li>
+              <li>
+                <i class="bounce fa fa-instagram"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+	const cards = document.querySelectorAll(".card-group");
+
+cards.forEach(function(card){
+   
+
+  card.addEventListener('click',function(e){
+    const cardFront = this.querySelector(".card-front");
+    const  bounces = this.querySelectorAll('.bounce');
+    const hoverfirsts = this.querySelectorAll('.hover-first'),
+          hoverseconds = this.querySelectorAll('.hover-second');
+    const hover = this.querySelector('.hover');
+    let that = this;
+      if(!this.classList.contains('in')){
+        this.className += " in";
+      setTimeout(function(e){
+               cardFront.className += ' on';
+
+
+
+      },100);
+        setTimeout(function(e){
+          bounces.forEach(function(bounce){
+            bounce.className += " onshadow";
+          })
+          hoverfirsts.forEach(function(hover){
+            hover.className += " act";
+          })
+          hoverseconds.forEach(function(hover){
+            hover.className += " act";
+          })
+          hover.className += " down";
+
+      },200);
+      }else{
+      let that = this;
+      
+    
+          hover.classList.remove('down');
+      cardFront.classList.remove('on');
+      setTimeout(function(e){
+         bounces.forEach(function(bounce){
+        bounce.classList.remove('onshadow');
+      })
+      hoverfirsts.forEach(function(hover){
+           that.classList.remove('in');
+           hover.classList.remove('act');
+      })
+          hoverseconds.forEach(function(hover){
+            hover.classList.remove('act');
+          })
+      },150);
+
+      }
+
+  })
+
+})
+
+
+</scirpt>
+</body>
+
+</html>

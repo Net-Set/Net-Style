@@ -1,0 +1,550 @@
+Core JAVA//:
+1:Write a program to calculate the hypotenuse of right angled triangle when other sides of the triangle are given.(hypotenuse=Square root(x*x+y*y))//:
+Code:
+package com.java2novice.math;
+ 
+public class MyHypotEx {
+ 
+    public static void main(String[] args) {
+         
+        int x = 10;
+        int y = 20;
+        System.out.println("The length of hypotenuse is: "+Math.hypot(x, y));
+    }
+}
+
+
+2 Write a program to evaluate simple interest of a given
+principle, rate and time. //:
+
+
+Code:
+public class Main.
+{
+public static void main (String args[])
+{ float p, r, t, si; // principal amount, rate, time and simple interest respectively.
+p = 13000; r = 12; t = 2;
+si = (p*r*t)/100;
+System.out.println("Simple Interest is: " +si);
+}}
+
+3 Write a program to find maximum of two numbers without
+using third variable. //:
+Code:
+
+public class JavaSwapExample {
+
+ public static void main(String[] args) {
+
+  int x = 10;
+  int y = 20;
+
+  System.out.println("Before Swapping");
+  System.out.println("Value of x is :" + x);
+  System.out.println("Value of y is :" + y);
+
+  //add both the numbers and assign it to first
+  x = x + y;
+  y = x - y;
+  x = x - y;
+
+  System.out.println("Before Swapping");
+  System.out.println("Value of x is :" + x);
+  System.out.println("Value of y is :" + y);
+ }
+}
+
+4.Write a program using the arithmetic operators to perform
+algebraic operations on two numbers. (Algebraic operation is
++, - , *, /, %)//:
+
+Code:
+class operation4
+ 
+{
+ 
+public static void main(String args[])
+ 
+{
+ 
+int a,b;
+ 
+nfloat ans=0;
+ 
+char c;
+ 
+a=Integer.parseInt(args[0]);
+ 
+b=Integer.parseInt(args[1]);
+ 
+try
+ 
+{
+ 
+System.out.println("enter operation:");
+ 
+switch(c=(char)System.in.read())
+ 
+{
+ 
+case '+' :ans= a+b;
+ 
+break;
+ 
+case '-' :ans= a-b;
+ 
+break;
+ 
+case '*' :ans= a*b;
+ 
+break;
+ 
+case '/' :ans= a/b;
+ 
+break;
+ 
+case '%' :ans= a/b;
+ 
+break;
+ 
+default:System.out.println("invalid expression");
+ 
+break;
+ 
+}
+ 
+System.out.println("answer is:"+ans);
+ 
+}
+ 
+catch(Exception e)
+ 
+{
+ 
+System.out.println(e);
+ 
+}
+ 
+}
+ 
+}
+
+5 Write a program to calculate the area of square and rectangle
+by overloading the area method.//:
+Code:
+class OverloadDemo
+{
+    void area(float x)
+    {
+        System.out.println("the area of the square is "+Math.pow(x, 2)+" sq units");
+    }
+    void area(float x, float y)
+    {
+        System.out.println("the area of the rectangle is "+x*y+" sq units");
+    }
+    void area(double x)
+    {
+        double z = 3.14 * x * x;
+        System.out.println("the area of the circle is "+z+" sq units");
+    }
+}
+class Overload 
+{
+     public static void main(String args[]) 
+	{
+	   OverloadDemo ob = new OverloadDemo();
+	   ob.area(5);
+	   ob.area(11,12);
+	   ob.area(2.5);
+        }
+}
+
+6 Write a java program to display powers of 2 i.e. 2,4,8,16 etc up
+to 1024 using bitwise operators. //;
+class power
+{
+public static void main(String[] args)
+{
+  int p=1;
+ for(int i=0;i<10;i++)
+ {
+   p=p<<1;
+  System.out.println(p);
+ }
+}
+
+}
+
+7 Write a java program to scan 3 integer values from the user
+and display the minimum using conditional operator.//:
+Code:
+import java.util.Scanner;
+public class JavaExample 
+{
+    public static void main(String[] args) 
+    {
+        int num1, num2, num3, result, temp;
+        /* Scanner is used for getting user input. 
+         * The nextInt() method of scanner reads the
+         * integer entered by user.
+         */
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter First Number:");
+        num1 = scanner.nextInt();
+        System.out.println("Enter Second Number:");
+        num2 = scanner.nextInt();
+        System.out.println("Enter Third Number:");
+        num3 = scanner.nextInt();
+        scanner.close();
+        
+        /* In first step we are comparing only num1 and
+         * num2 and storing the smallest number into the
+         * temp variable and then comparing the temp and
+         * num3 to get final result.
+         */
+        
+        temp = num1 < num2 ? num1:num2;
+        result = num3 < temp ? num3:temp;
+        System.out.println("Smallest Number is:"+result);
+    }
+}
+
+8 Write a program to convert inches to centimeters.//;
+Code:
+import java.io.*;
+import java.util.*;
+
+class InchesToCms{
+  public static void main (String[] args)throws Exception{
+  //1 inches = 2.54 centimeters;
+  BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+  System.out.print("Enter the inches: ");
+  float inches = Float.parseFloat(bf.readLine());
+  float cm = inches * 2.54f;
+  System.out.println(inches + " inches is " + cm + " centimeter(s).");
+  }
+}
+
+9 Create a complex number class. The class should have a
+constructor and methods to add, subtract and multiply two
+complex numbers and to return the real and imaginary parts.//:
+
+
+Code:
+public class ComplexNumber{
+   //for real and imaginary parts of complex numbers
+   double real, img;
+	
+   //constructor to initialize the complex number
+   ComplexNumber(double r, double i){
+	this.real = r;
+	this.img = i;
+   }
+	
+   public static ComplexNumber sum(ComplexNumber c1, ComplexNumber c2)
+   {
+	//creating a temporary complex number to hold the sum of two numbers
+        ComplexNumber temp = new ComplexNumber(0, 0);
+
+        temp.real = c1.real + c2.real;
+        temp.img = c1.img + c2.img;
+        
+        //returning the output complex number
+        return temp;
+    }
+    public static void main(String args[]) {
+	ComplexNumber c1 = new ComplexNumber(5.5, 4);
+	ComplexNumber c2 = new ComplexNumber(1.2, 3.5);
+        ComplexNumber temp = sum(c1, c2);
+        System.out.printf("Sum is: "+ temp.real+" + "+ temp.img +"i");
+    }
+}
+Output:
+
+Sum is: 6.7 + 7.5i
+
+ Decision Making, Looping, String, Array, Wrapper
+Classes
+10 hours
+1 Write a program to print even number up to 10 using while
+loop. 
+Code:
+public class WhileEven {
+
+    public static void main(String[] args) {
+        int i=0;
+        System.out.println("Even numbers");
+        while(i<=10)
+        {
+            int num=0;
+            System.out.println(num);
+            i+=1;
+            num+=2;
+        }
+    }
+}
+
+2 Write a program to check whether the given number is even or
+odd. 
+
+Code:
+import java.util.Scanner;
+class OddOrEven
+{
+  public static void main(String args[])
+  {
+    int x;
+    System.out.println("Enter an integer to check if it's odd or even");
+    Scanner in = new Scanner(System.in);
+    x = in.nextInt();
+
+    if (x % 2 == 0)
+      System.out.println("The number is even.");
+    else
+      System.out.println("The number is odd.");
+  }
+}
+
+3 Write a program to demonstrate calculator using switch
+statement. 
+Code:
+import java.util.Scanner;
+public class Calculator {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter two numbers: ");
+        // nextDouble() reads the next double from the keyboard
+        double first = reader.nextDouble();
+        double second = reader.nextDouble();
+        System.out.print("Enter an operator (+, -, *, /): ");
+        char operator = reader.next().charAt(0);
+        double result;
+        switch(operator)
+        {
+            case '+':
+                result = first + second;
+                break;
+            case '-':
+                result = first - second;
+                break;
+            case '*':
+                result = first * second;
+                break;
+            case '/':
+                result = first / second;
+                break;
+            // operator doesn't match any case constant (+, -, *, /)
+            default:
+                System.out.printf("Error! operator is not correct");
+                return;
+        }
+        System.out.printf("%.1f %c %.1f = %.1f", first, operator, second, result);
+    }
+}
+
+4 Write a program to create an array to store 5 integer values.
+Also initialize the array with 5 numbers and display the array
+Elements in reverse order.
+Code:
+
+public class ReverseArray {  
+    public static void main(String[] args) {  
+        //Initialize array  
+        int [] arr = new int [] {1, 2, 3, 4, 5};  
+        System.out.println("Original array: ");  
+        for (int i = 0; i < arr.length; i++) {  
+            System.out.print(arr[i] + " ");  
+        }  
+        System.out.println();  
+        System.out.println("Array in reverse order: ");  
+        //Loop through the array in reverse order  
+        for (int i = arr.length-1; i >= 0; i--) {  
+            System.out.print(arr[i] + " ");  
+        }  
+    }  
+} 
+
+5 Write a program to create integer array containing 10 values.
+Then print all the prime numbers contained by the array. 
+Code:
+import java.util.Scanner;
+public class PrimeNumbers{
+public static void main (String[] args){
+    int[] array = new int [5];
+    Scanner in = new Scanner (System.in);
+
+    System.out.println("Enter the elements of the array: ");
+    for(int i=0; i<5; i++)
+    {
+        array[i] = in.nextInt();
+    }
+Elements in the array are looped one by one using for loop.
+    for(int i=0; i<array.length; i++){
+        boolean isPrime = true;
+
+Using for loop and if condition, prime numbers are identified from all the numbers that are entered in the array.
+        for (int j=2; j<i; j++){
+
+            if(i%j==0){
+                isPrime = false;
+                break;
+            }
+        }
+     
+All the prime numbers or the numbers that satisfy the if condition are displayed as output. 
+        if(isPrime)
+
+            System.out.println(i + " are the prime numbers in the array ");
+    }
+}
+}
+6 Write a program to create a character array to store 6
+characters. Also initialize the array with 6 random characters.
+Now create another array containing 10 characters. Copy the
+elements ranging from index 2 to 4of first array to second
+array at the same index. 
+Code:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7 Write a program to sort a list of students on the basis of the
+marks. 
+Code:
+
+
+import java.util.Scanner;
+
+class Student {
+	String name;
+	String stu_id;
+	int score;
+	public Student() {
+		this(" ", " ", 0);
+	}
+	public Student(String initName, String initId, int initScore) {
+		name = initName;
+		stu_id = initId;
+		score = initScore;
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Input number of students:");
+		int n = Integer.parseInt(in.nextLine().trim());
+		System.out.println("Input Student Name, ID, Score:");
+		Student stu = new Student();
+		Student max = new Student();
+		Student min = new Student(" ", " ", 100);
+		for (int i = 0; i < n; i ++) {
+			stu.name = in.next();
+			stu.stu_id = in.next();
+			stu.score = in.nextInt();
+			if (max.score < stu.score) {
+				max.name = stu.name;
+				max.stu_id = stu.stu_id;
+				max.score = stu.score;
+			}
+			if (min.score > stu.score) {
+				min.name = stu.name;
+				min.stu_id = stu.stu_id;
+				min.score = stu.score;
+			}
+		}
+		System.out.println("name, ID of the highest score and the lowest score:");
+		System.out.println(max.name + " " + max.stu_id);
+		System.out.println(min.name + " " + min.stu_id);
+		in.close();
+	}
+}
+
+8 Write a java program that accepts a string from users and
+display each character on separate line in reverse order. 
+Code:
+ 
+public class ReverseString
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Enter string to reverse:");
+        
+        Scanner read = new Scanner(System.in);
+        String str = read.nextLine();
+        String reverse = "";
+        
+        
+        for(int i = str.length() - 1; i >= 0; i--)
+        {
+            reverse = reverse + str.charAt(i);
+        }
+        
+        System.out.println("Reversed string is:");
+        System.out.println(reverse);
+    }
+}
+
+
+9 Write a program to create a string array and sort all the string
+contained by the array. 
+Code:
+import java.util.Arrays; 
+
+public class SortExample 
+{ 
+	public static void main(String[] args) 
+	{ 
+		// Our arr contains 8 elements 
+		int[] arr = {13, 7, 6, 45, 21, 9, 101, 102}; 
+
+		Arrays.sort(arr); 
+
+		System.out.printf("Modified arr[] : %s", 
+						Arrays.toString(arr)); 
+	} 
+} 
+
+
+10 Write a program to create a string using the string class and
+check whether the string is a palindrome or not. A string is a
+palindrome that is spelled the same both forwards and
+backwards. 
+Code:
+import java.util.Scanner;
+ 
+class ChkPalindrome
+{
+   public static void main(String args[])
+   {
+      String str, rev = "";
+      Scanner sc = new Scanner(System.in);
+ 
+      System.out.println("Enter a string:");
+      str = sc.nextLine();
+ 
+      int length = str.length();
+ 
+      for ( int i = length - 1; i >= 0; i-- )
+         rev = rev + str.charAt(i);
+ 
+      if (str.equals(rev))
+         System.out.println(str+" is a palindrome");
+      else
+         System.out.println(str+" is not a palindrome");
+ 
+   }
+}

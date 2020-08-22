@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>home_at_54</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="jquery-3.4.1.min.js"></script>
+
+
+<style>
+	body,
+body * {
+  transition: all 300ms ease-out;
+}
+body.light {
+  background-color: #eeeeee;
+}
+body.dark {
+  background-color: #222222;
+}
+body ul.menu {
+  position: absolute;
+  height: 250px;
+  top: 50%;
+  margin-top: -125px;
+  width: auto;
+  margin-left: 50px;
+}
+body ul.menu li {
+  color: #000000;
+  list-style-type: none;
+  line-height: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  text-transform: lowercase;
+}
+body ul.menu li:hover {
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+
+<ul class="menu">
+	<li><span>Welcome</span></li>
+	<li><span>About Us</span></li>
+	<li><span>What we do</span></li>
+	<li><span>Our portfolio</span></li>
+	<li><span>Contact us</span></li>
+</ul>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	$('body').addClass('light');
+	
+	$('ul.menu li').mouseover(function(){
+		$('body').addClass('dark').removeClass('light');
+	});
+	
+	$('ul.menu li').mouseout(function(){
+		$('body').addClass('light').removeClass('dark');
+	});
+  
+})
+</script>
+</body>
+</html>

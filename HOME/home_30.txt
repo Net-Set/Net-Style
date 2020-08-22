@@ -1,0 +1,1933 @@
+<html>
+<head>
+  <title>
+    home_at_29
+  </title>
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+/* ==========================================================================
+   Resets and optimisations for all html elements 
+   ========================================================================== */
+
+/*
+ * Reset All values.
+ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*
+ * Add border box model and fix font rendering.
+ */
+ 
+*,
+*:after,
+*:before {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+*, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, li, ul, span, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-weight: 300;
+}
+
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden],
+.hidden {
+    display: none !important;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+::-webkit-selection {
+  background: #CBE8FF;
+}
+::-moz-selection {
+  background: #CBE8FF;
+}
+::-ms-selection {
+  background: #CBE8FF;
+}
+::selection {
+  background: #CBE8FF;
+}
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    min-height: 100%;
+    padding-bottom: 350px;
+    position: relative;
+}
+body,
+input,
+button,
+textarea {
+    color: #444;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.wrapper .clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.center {
+  display: block;
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+}
+.left {
+    float: left !important;
+}
+.right {
+    float: right !important;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+a {
+    text-decoration: none;
+}
+html.no-touch a:hover {
+    text-decoration: underline;
+}
+a:focus {
+    outline: 0;
+}
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/* Font Styles */
+
+h1:first-letter,
+h2:first-letter,
+h3:first-letter,
+h4:first-letter,
+h5:first-letter,
+h6:first-letter {
+  text-transform: capitalize;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0077D7;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 21px;
+}
+h5 {
+    font-size: 17px;
+}
+h6 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+a {
+    color: #0077D7
+}
+p {
+    margin: auto auto 1.5em
+}
+.header {
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 30px;
+    position: relative;
+}
+.title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.title.small {
+  font-size: 14px;
+}
+.sub-title {
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none !important;
+}
+.title em {
+    font-weight: 600;
+}
+.ellipsis {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+body .twitter-typeahead {
+    display: block !important;
+}
+body .twitter-typeahead input.tt-hint {
+    color: #C4C4C4;
+}
+body .tt-dropdown-menu {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 1px #FFFFFF inset, 0 0 3px rgba(1, 1, 1, 0.5);
+    display: none;
+    min-width: 130px;
+    position: absolute;
+    top: 36px !important;
+}
+body .tt-dropdown-menu:before,
+body .tt-dropdown-menu:after {
+    border: 5px solid transparent;
+    border-bottom: 5px solid #FFF;
+    content: " ";
+    left: 10px;
+    position: absolute;
+    top: -9px;
+}
+body .tt-dropdown-menu:before {
+    border-bottom-color: rgba(1, 1, 1, 0.25);
+    top: -10px;
+}
+body .tt-dropdown-menu.tt-dropdown-menu-right {
+  text-align: right;
+}
+body .tt-dropdown-menu.tt-dropdown-menu-right:before,
+body .tt-dropdown-menu.tt-dropdown-menu-right:after {
+  left: auto;
+  right: 10px;
+}
+body .tt-dropdown-menu p {
+    margin: 0;
+}
+body .tt-dropdown-menu > ul, body .tt-dropdown-menu > div {
+    border-bottom: 1px solid #d5d5d5;
+    padding: 6px 0;
+}
+body .tt-dropdown-menu > ul:last-child,
+body .tt-dropdown-menu > div:last-child {
+    border-bottom: 0 none;
+}
+body .tt-dropdown-menu .header {
+    border: 0 none;
+    color: #0077D7;
+    font-size: 14px;
+    margin: 0 8px;
+    padding: 2px 1px;
+}
+body .tt-dropdown-menu .tt-suggestion {
+    max-height: 50px;
+    overflow: hidden;
+}
+body .tt-dropdown-menu .tt-suggestion img {
+    border: 1px solid #70BFFF;
+    float: left;
+    margin: 9px;
+    width: 35px;
+}
+body .tt-dropdown-menu > ul > li a,
+body .tt-dropdown-menu .tt-suggestion p {
+    color: #444444;
+    display: block;
+    font-size: 13px;
+    margin: 0 1px;
+    padding: 4px 9px;
+}
+html.no-touch body .tt-dropdown-menu > ul > li a:hover,
+html.no-touch body .tt-dropdown-menu .tt-suggestion:hover,
+html.no-touch body .tt-dropdown-menu .tt-suggestion.tt-is-under-cursor {
+    background-color: #ececec;
+    text-decoration: none;
+}
+body .tt-dropdown-menu > ul > li a span {
+    font-weight: 500;
+}
+
+/* Button Styles */
+
+.wrapper .btn {
+    cursor: pointer;
+    color: #444;
+    display: block;
+    padding: 5px 21px;
+    position: relative;
+}
+.wrapper .btn.grey {
+    background-color: #EFEFEF;
+    box-shadow: 0 0 0 1px #FFFFFF inset;
+    border: 1px solid #d5d5d5;
+}
+html.no-touch .wrapper .btn.grey:hover {
+    background-color: #F4F4F4;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    border-color: #CBC9C9;
+}
+.wrapper .btn.grey:active,
+.wrapper .btn.grey.active,
+html.no-touch .wrapper .btn.grey:active:hover,
+html.no-touch .wrapper .btn.grey.active:hover {
+    background-color: #DDDDDD;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.95) inset;
+    border-color: #BBBBBB;
+}
+.wrapper .btn.grey.active {
+    z-index: 1
+}
+.btn.icon {
+  box-shadow: 34px 0 0 1px #FFFFFF inset;
+  padding-left: 45px;
+}
+.btn > i {
+    background-color: #0077D7;
+    background-position: center center;
+    background-repeat: no-repeat;
+  border: 1px solid rgba(1, 1, 1, 0.1);
+    bottom: -1px;
+    box-shadow: 1px 1px rgba(255, 255, 255, 0.2) inset;
+    display: block;
+    left: -1px;
+    position: absolute;
+    top: -1px;
+    width: 35px;
+}
+.btn.icon:hover > i {
+    background-color: #1E9BFF;
+}
+.item-actions .btn > i {
+    background-image: url("../images/item_icons_retina.png");
+}
+.item-actions .btn.view-item > i {
+    background-position: 7px 6px;
+    background-size: 180px 22px;
+}
+.item-actions .btn.assign-to-class > i {
+    background-position: -33px center;
+    background-size: 180px 20px;
+}
+.item-actions .btn.add-to-pathway > i {
+    background-position: -73px 8px;
+    background-size: 180px 19px;
+}
+html.no-touch .wrapper .btn.add-to-pathway:hover > i {
+    background-color: #18BB16;
+    border-color: #11990F;
+}
+.item-actions .btn.remove-from-pathway > i {
+    background-position: -113px 8px;
+    background-size: 180px 19px;
+}
+.item-actions .btn.download-teacher-notes > i {
+    background-position: -153px 7px;
+    background-size: 180px 19px;
+}
+html.no-touch .wrapper .btn.remove-from-pathway:hover > i {
+    background-color: #E72828;
+    border-color: #C10B0B;
+}
+.btn > .hidden-label {
+    display: none;
+}
+
+/* Header Styles */
+
+header .menu {
+    background-color: #0077D7;
+    height: 80px;
+}
+.menu-wrapper {
+    position: relative;
+    z-index: 5;
+}
+header .search {
+    position: absolute;
+    right: 0;
+    top: 24px;
+}
+
+/* Drop Down Styles */
+
+nav {
+    background: #1297F5;
+    height: 80px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  z-index: 1;
+}
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+    margin-bottom: 0;
+}
+h1 a {
+  font-size: 28px!important;
+  padding-top: 15px;
+}
+nav a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    max-width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+html.no-touch nav a:hover {
+  text-decoration: none;
+}
+nav ul.top-level > li {
+    float: left;
+    height: 80px;
+    padding: 0 15px;
+    position: relative;
+}
+nav ul.top-level > li:after {
+  content: " ";
+  border: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  left: 50%;
+  margin-left: -9px;
+  position: absolute;
+  bottom: -1px;
+  z-index: -1;
+}
+nav ul.top-level > li:hover:after {
+  display: none;
+}
+nav ul.top-level > li img {
+  padding-top: 15px;
+}
+nav ul.top-level > li.has-children > a {
+  padding-right: 45px;
+  position: relative;
+}
+nav ul.top-level > li > a:after {
+  content: " ";
+  border: 6px solid transparent;
+  border-top: 6px solid #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  right: 15px;
+}
+nav ul[class*="sub-level"] {
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+}
+html.no-touch nav ul[class*="sub-level"] {
+  opacity: 0;
+}
+nav li:hover > ul[class*="sub-level"] {
+  visibility: visible;
+}
+html.no-touch nav li:hover > ul[class*="sub-level"] {
+  opacity: 1;
+}
+nav li > ul[class*="sub-level"]:not(.sub-level-1) {
+  left: 191px;
+  top: 0;
+}
+nav ul[class*="sub-level"] li a {
+    font-weight: 400;
+    height: 37px;
+    padding: 8px 20px;
+    position: relative;
+}
+nav ul[class*="sub-level"] li.has-children > a:after {
+  content: " ";
+  border: 5px solid transparent;
+  border-left: 5px solid rgba(255,255,255,0.15);
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: 6px;
+}
+nav ul[class*="sub-level"] li.has-children:hover > a:after {
+  border-left-color: rgba(255,255,255,1);
+}
+nav ul.sub-level-1,
+nav ul.sub-level-2 {
+    width: 191px;
+}
+nav ul.sub-level-1 {
+    background: none repeat scroll 0 0 #005BA4;
+    left: 15px;
+    top: 80px;
+}
+html.no-touch nav ul.sub-level-1 {
+  -webkit-transition: all 250ms ease 0s;
+    -moz-transition: all 250ms ease 0s;
+    transition: all 250ms ease 0s;
+    -webkit-transform: translatey(10px);
+    -moz-transform: translatey(10px);
+    transform: translatey(10px);
+}
+html.no-touch nav li:hover > ul.sub-level-1 {
+  -webkit-transform: translatey(0px);
+  -moz-transform: translatey(0px);
+  transform: translatey(0px);
+}
+nav ul.sub-level-1:before {
+    background: none repeat scroll 0 0 #005BA4;
+    bottom: 0;
+    content: " ";
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 942px;
+    z-index: -1;
+}
+@media all and (min-width: 1200px) {
+  nav ul.sub-level-1:before {
+      width: 1110px;
+  }
+}
+nav ul.sub-level-1:after {
+  content: " ";
+  border: 10px solid transparent;
+  border-bottom: 10px solid #005BA4;
+  left: 50%;
+  margin-left: -10px;
+  position: absolute;
+  top: -19px;
+  z-index: -1;
+}
+nav ul.sub-level-1 > li:hover a {
+  background: none repeat scroll 0 0 #00447B;
+}
+nav ul.sub-level-2 {
+  background: none repeat scroll 0 0 #00447B;
+}
+nav ul.sub-level-2 > li:hover a {
+  background: none repeat scroll 0 0 #003662;
+}
+nav ul.sub-level-3 {
+    background: none repeat scroll 0 0 #003662;
+    width: 560px;
+}
+@media all and (min-width: 1200px) {
+  nav ul.sub-level-3 {
+      width: 728px;
+  }
+}
+nav ul.sub-level-3 > li a {
+  font-size: 13px;
+}
+nav ul.sub-level-3 > li:hover > a {
+  text-decoration: underline;
+}
+
+/* Universal Search Styles */
+
+.search input[type="text"] {
+  background: #fff;
+    border: 0 none;
+    border-radius: 60px;
+    height: 33px;
+    outline: 0 none;
+    padding: 0 31px 0 14px;
+}
+.search input[type="text"] {
+  width: 100%;
+  width: -webkit-calc(100% - 58px);
+  width: -moz-calc(100% - 58px);
+  width: calc(100% - 58px);
+}
+.search input[type="submit"] {
+    background: url("../images/search.png") no-repeat scroll center center transparent;
+    border: 0 none;
+    height: 29px;
+    outline: 0 none;
+    position: absolute;
+    right: 60px;
+    text-indent: -3000em;
+    top: 2px;
+    width: 29px;
+}
+.search-wrapper {
+    position: relative;
+}
+.search input[type="text"]:focus + .search-menu.tt-dropdown-menu {
+    display: block;
+}
+.search .search-wrapper .tt-dropdown-menu {
+    left: 15px !important;
+    width: 190px;
+}
+@media all and (min-width: 1200px) {
+  .search .search-wrapper .tt-dropdown-menu {
+      width: 225px;
+  }
+}
+.search input[type="text"]:focus + .wrapper .tt-dropdown-menu {
+    display: block;
+}
+.user-wrapper {
+    padding-bottom: 10px;
+    position: absolute;
+    right: 0;
+    top: 24px;
+}
+.user-wrapper .user {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 100%;
+    height: 33px;
+    width: 33px;
+}
+.user-wrapper .user-menu.tt-dropdown-menu {
+    left: auto;
+    right: 0;
+    top: 37px;
+    z-index: 999;
+}
+.user-wrapper:hover .user .user-menu.tt-dropdown-menu {
+    display: block;
+}
+.user-wrapper .user a {
+    display: block;
+}
+.user-wrapper .user a img {
+    border-radius: 100px;
+    height: 33px;
+    padding: 2px;
+    width: 33px;
+}
+
+/* Header Breadcrumb Styles */
+
+header .breadcrumb {
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #d5d5d5;
+    box-shadow: 0 -1px 0 0 #FFFFFF inset;
+    padding: 6px 0;
+}
+header .breadcrumb li {
+    display: block;
+    float: left;
+    max-width: 335px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.breadcrumb li:before {
+    content: ">";
+    float: left;
+    margin: 0 8px;
+}
+.breadcrumb li:first-child:before,
+.breadcrumb li:first-child:after {
+    display: none;
+}
+
+/* Home Page */
+
+.home .header-wrapper {
+  margin-bottom: 0;
+}
+.home .main > .banner {
+  background: url("/content-app/resources/images/homepage_banner_back.png");
+}
+.home .main .home-menu {
+    background: #0077D7;
+}
+.home .main .home-menu li {
+    border-right: 1px solid #FFFFFF;
+    float: left;
+}
+.home .main .home-menu a {
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 15px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+.home .main .home-menu a:hover {
+  background: #148EF1;
+}
+.home .main .home-menu li.active a {
+  background: #005BA4;
+}
+.home .main .home-menu li.active a:after {
+    border-left: 8px solid rgba(0, 0, 0, 0);
+    border-right: 8px solid rgba(0, 0, 0, 0);
+    border-top: 8px solid #005BA4;
+    bottom: -7px;
+    content: " ";
+    left: 50%;
+    margin-left: -8px;
+    position: absolute;
+}
+.home-menu-target {
+    min-height: 500px;
+}
+.home-menu-target > ul > li {
+    display: none;
+}
+.home-menu-target > ul > li.active {
+    display: block;
+}
+.home-menu-target h1,
+.home-menu-target h2,
+.home-menu-target h3,
+.home-menu-target h4,
+.home-menu-target h5,
+.home-menu-target h6 {
+    margin-bottom: 0;
+}
+.home .main .home-menu-target .subject-tab ul > li {
+    border: 1px solid #DCDCDC;
+    cursor: pointer;
+    height: 100px;
+    padding: 10px;
+}
+.home .main .home-menu-target .subject-tab ul > li:hover {
+    box-shadow: 0 0 0 4px #ABDAFF inset;
+}
+.home .main .home-menu-target .subject-tab ul > li.active {
+    background: none repeat scroll 0 0 #E4F3FF;
+    box-shadow: 0 49px rgba(255, 255, 255, 0.3) inset, 0 0 0 4px #ABDAFF inset;
+    color: #0077D7;
+}
+.home .main .home-menu-target .pos-wrapper {
+    max-height: 0;
+    overflow: hidden;
+}
+.home .main .home-menu-target .pos-wrapper.active {
+  max-height: 1000px;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #0077D7;
+    bottom: 0;
+    left: 0;
+    height: 270px;
+    position: absolute;
+    right: 0;
+}
+footer * {
+  color: #fff;
+}
+footer .recently-viewed {
+  padding-top: 20px;
+}
+footer .image-wrapper {
+  border: 0 none;
+}
+footer .reset-filter {
+  cursor: pointer;
+  display: none;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    white-space: nowrap;
+}
+footer .reset-filter.active {
+  display: block;
+}
+footer ul.slides > li {
+  position: relative;
+}
+footer ul.slides > li:hover .title {
+    text-decoration: underline;
+}
+
+/* Results Page Styles */
+
+.results-menu .heading > h3 {
+    font-weight: 300;
+    margin: 0;
+}
+.results-menu .heading > h3 > span:first-child {
+    font-weight: 400;
+}
+.results-menu .heading h3 > .query {
+    font-weight: 400;
+    max-width: 550px;
+}
+.results-menu .filters {
+    margin-top: -5px;
+}
+.results-menu .filters li {
+    float: left;
+    height: 34px;
+    list-style: none outside none;
+    margin-right: 10px;
+    margin-top: 6px;
+    white-space: nowrap;
+}
+.results-menu .filters li:first-child {
+    margin-right: -1px;
+}
+.results-menu .filters li:last-child {
+    margin-right: 0
+}
+.results-menu .filters li.icon-only {
+    background-image: url("../images/filter-icons-retina.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 70px auto;
+    height: 34px;
+    padding: 0;
+    width: 34px;
+}
+.results-menu .filters li.icon-only.grid {
+    background-position: -1px center;
+}
+.results-menu .filters li.icon-only.list {
+    background-position: -36px center;
+}
+body.results .wrapper .results {
+  overflow: hidden;
+    position: relative;
+}
+.results.grid-view-active:not(.filter-active) .results-wrapper,
+.results.list-view-active:not(.filter-active) .results-wrapper {
+    width: auto;
+}
+.results.loading .results-wrapper:after {
+    background-color: rgba(255, 255, 255, 0.7);
+    bottom: 0;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.results .results-wrapper > ul {
+    font-size: 0;
+}
+.results .results-wrapper > ul > li {
+    float: none;
+    font-size: 15px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+}
+.results.grid-view-active .results-wrapper > ul > li {
+    display: inline-block;
+}
+.results.list-view-active .results-wrapper > ul > li {
+    display: block;
+    width: auto;
+}
+.result-wrapper > a {
+    float: left;
+}
+.results.grid-view-active li > .result-wrapper > a {
+    display: block;
+    float: none;
+    margin-bottom: 10px;
+}
+.results.list-view-active li > .result-wrapper > a {
+    margin-right: 15px;
+    width: 255px;
+}
+html.no-touch .results li > .result-wrapper a:hover .title,
+html.no-touch .results li > .result-wrapper > a:hover + .bside .title {
+    text-decoration: underline;
+}
+.results h3.no-results > span {
+    font-weight: 500;
+}
+.results .results-wrapper li .title {
+    margin-bottom: 10px;
+}
+.results.list-view-active .results-wrapper li .title {
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 8px;
+}
+.results .results-wrapper li .bside .more-info {
+    margin-top: 12px;
+}
+.results.list-view-active .results-wrapper li .bside {
+    margin-left: 270px;
+}
+.results .results-wrapper li .bside .more-info .description,
+.results .results-wrapper li .bside .more-info .pos {
+    margin-bottom: 12px;
+}
+.results.grid-view-active .results-wrapper li .bside .more-info .description {
+    display: none;
+}
+.results.list-view-active .results-wrapper li .bside .more-info .description,
+.results .results-wrapper .ellipsis {
+    display: block;
+}
+.results .results-wrapper .load-more-wrapper {
+    position: relative;
+    z-index: 2;
+}
+.more-info a {
+    color: #444444;
+}
+.image-wrapper > img {
+    margin-top: 26px;
+}
+.recently-viewed .image-wrapper > img,
+.recommended-activities .image-wrapper > img {
+  margin-top: 0;
+}
+.image-wrapper .ability-tags {
+  white-space: nowrap;
+}
+.image-wrapper .item-tag {
+    background-color: #F2F2F2;
+    border: 1px solid #D5D5D5;
+    box-shadow: 0 12px 0 #FFFFFF inset, 0 0 0 1px #FFFFFF inset;
+    color: #0077D7;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    height: 27px;
+    left: -1px;
+    line-height: 24px;
+    padding: 0 12px;
+    position: absolute;
+    right: -1px;
+    text-align: left;
+    text-shadow: 0 1px #FFFFFF;
+    top: -1px;
+}
+.image-wrapper .year {
+    font-size: 11.5px;
+    font-weight: 600;
+    position: absolute;
+    right: 7px;
+    text-shadow: 0 1px #FFFFFF;
+    top: 2px;
+}
+.image-wrapper .year:after {
+    background: none repeat scroll 0 0 #DCDCDC;
+    border-left: 1px solid #FFFFFF;
+    content: " ";
+    height: 27px;
+    left: -12px;
+    position: absolute;
+    top: -3px;
+    width: 2px;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+.image-wrapper .item-tag.ability-level {
+    padding-left: 24px;
+}
+.image-wrapper .item-tag.ability-level.simplified,
+.image-wrapper .item-tag.ability-level.simplified + .year {
+    color: #FC6C0D;
+}
+.image-wrapper .item-tag.ability-level.simplified:after {
+    background-color: #FC6C0D;
+}
+.image-wrapper .item-tag.ability-level.standard,
+.image-wrapper .item-tag.ability-level.standard + .year {
+    color: #33AA0C;
+}
+.image-wrapper .item-tag.ability-level.standard:after {
+    background-color: #33AA0C;
+}
+.image-wrapper .item-tag.ability-level.advanced,
+.image-wrapper .item-tag.ability-level.advanced + .year {
+    color: #922DF4;
+}
+.image-wrapper .item-tag.ability-level.advanced:after {
+    background-color: #922DF4;
+}
+.image-wrapper .item-tag.teacher-tool-icon {
+    padding: 0 14px 0 32px;
+}
+.recently-viewed .image-wrapper .item-tag.teacher-tool-icon,
+.recently-viewed .image-wrapper .item-tag.ability-level {
+    font-size: 0;
+    padding: 0;
+    width: 30px;
+}
+.image-wrapper .item-tag.teacher-tool-icon:after {
+    background-image: url("../images/teacher_tool_icon_retina.png");
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    background-size: 18px 10px;
+    content: " ";
+    height: 21px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 38px;
+}
+.recently-viewed .image-wrapper .item-tag.teacher-tool-icon:after {
+    background-position: 5px 7px;
+}
+.image-wrapper .item-tag.ability-level:after {
+    border-radius: 100px;
+    box-shadow: 0 1px 0 #FFFFFF;
+    content: " ";
+    height: 9px;
+    left: 7px;
+    position: absolute;
+    top: 8px;
+    width: 9px;
+}
+.recently-viewed .image-wrapper .item-tag.ability-level:after {
+    left: 9px;
+}
+
+/* Filter styles */
+
+body.results .wrapper .results .filters {
+    color: #0077D7;
+    display: block;
+    opacity: 0;
+    padding-bottom: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+    transform: translateX(300px);
+    -webkit-transition: -webkit-transform 0.5s ease 0s, opacity 0.5s ease 0s;
+    -moz-transition: -moz-transform 0.5s ease 0s, opacity 0.5s ease 0s;
+    -ms-transition: -ms-transform 0.5s ease 0s, opacity 0.5s ease 0s;
+    -o-transition: -o-transform 0.5s ease 0s, opacity 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, opacity 0.5s ease 0s;
+}
+body.results .wrapper .results.filter-active .filters {
+    opacity: 1;
+    position: relative;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+.filter-option ul li {
+    margin-bottom: 15px;
+    position: relative;
+}
+.filters .title-wrapper {
+    background-color: #F5F5F5;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0 0 0 1px #FFFFFF inset;
+    height: 46px;
+    margin-bottom: -1px;
+    padding: 15px;
+}
+.filters .title-wrapper .reset-filters {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 11px;
+    white-space: nowrap;
+}
+.filters .title-wrapper .reset-filters.active {
+    display: block;
+}
+.filters .filter-option {
+    background-color: #F9F9F9;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0 0 0 1px #FFFFFF inset;
+    margin-bottom: -1px;
+    padding: 15px;
+}
+.filter-option > ul:last-child > li {
+    margin-bottom: 0;
+}
+.filters .title {
+    font-size: 15px;
+    margin-bottom: 12px;
+    margin-top: -5px;
+}
+.filter-option .count {
+    font-size: 13.5px;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    
+    display: none;
+}
+/* THIS IS NOT INTENDED */
+.filter-option.keywords, .filters #searchForm > input {
+    display: none;
+}
+.filter-option .label {
+    color: #444444;
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    line-height: 20px;
+    padding-left: 25px;
+}
+html.no-touch .filter-option ul li:not(.disabled):hover label {
+    text-decoration: underline;
+}
+.custom-checkbox-wrapper input[type="checkbox"] {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+.custom-checkbox-wrapper label:before {
+    background-color: #FFFFFF;
+    border: 1px solid #A4A4A4;
+    border-radius: 1px;
+    box-shadow: 0 0 0 1px #FFFFFF;
+    content: " ";
+    cursor: pointer;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 18px;
+}
+.custom-checkbox-wrapper input[type=checkbox]:checked + label:before {
+  border-color: #737373;
+}
+.custom-checkbox-wrapper label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 8px;
+  left: 5px;
+  border: 2px solid #BBB;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+html.no-touch li:not(.disabled) .custom-checkbox-wrapper label:hover:before,
+li:not(.disabled) .custom-checkbox-wrapper input[type=checkbox]:checked + label {
+  border-color: #737373;
+}
+html.no-touch li:not(.disabled) .custom-checkbox-wrapper label:hover:after {
+  opacity: 0.6;
+}
+.custom-checkbox-wrapper input[type=checkbox]:checked + label:after {
+  opacity: 1;
+  border-color: #0077D7;
+}
+.filter-option ul li.disabled {
+  opacity: 0.5;
+}
+.filter-option ul li.disabled label,
+.filter-option ul li.disabled label:before,
+.filter-option ul li.disabled label:after {
+    cursor: text;
+}
+.filter-option ul li.disabledFromStart label:before {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border: 0 none;
+    box-shadow: none;
+}
+.filter-option ul li.disabled label:after,
+.filter-option ul li.disabledFromStart  {
+    opacity: 1;
+}
+
+/* Item Page Styles */
+
+.item > .main {
+    min-height: 700px;
+}
+.item .main_content > .item {
+    margin-bottom: 80px;
+}
+.image-wrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #dcdcdc;
+    display: block;
+    margin-bottom: 4px;
+    padding: 6px;
+    position: relative;
+    text-align: center;
+}
+html.no-touch .grid-view > li:hover .image-wrapper,
+html.no-touch .image-wrapper:hover,
+li.current .image-wrapper {
+    background-color: #EDF7FF;
+    border-color: #ABDAFF;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.95) inset;
+}
+.teacher-tool .image-wrapper {
+    border: 1px solid #ABDAFF;
+}
+.teacher-tool .image-wrapper .item-tag.teacher-tool-icon {
+    background: none repeat scroll 0 0 #D5ECFF;
+    border: 1px solid #ABDAFF;
+    box-shadow: 0 13px 0 rgba(255, 255, 255, 0.7) inset, 0 0 0 1px #F7FBFF inset;
+    color: #0077D7;
+    text-shadow: 0 1px #DAEFFF;
+}
+.teacher-tool .image-wrapper .year {
+    color: #0077D7;
+    text-shadow: 0 1px #DAEFFF;
+}
+.teacher-tool .image-wrapper .year:after {
+    background: none repeat scroll 0 0 #ABDAFF;
+    border-color: #F7FBFF;
+}
+.item-actions {
+    margin-top: 15px;
+}
+.item-actions .btn {
+    margin-bottom: 10px;
+}
+.more-info .learning_objectives {
+  margin-bottom: 1.5em;
+}
+.more-info .learning_objectives ul,
+.more-info .programmes_of_study ul {
+    margin-left: 17px;
+}
+.more-info .learning_objectives ul li,
+.more-info .programmes_of_study ul li {
+    list-style: disc outside none;
+    margin-bottom: 8px;
+    padding-left: 6px;
+}
+.sidebar {
+    padding-top: 10px;
+}
+.sidebar:after {
+    background: none repeat scroll 0 0 #DCDCDC;
+    bottom: 0;
+    content: " ";
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+@media all and (min-width: 1200px) {
+  .sidebar:after {
+      margin-left: 0px;
+  }
+}
+
+.widget {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+@media all and (min-width: 1200px) {
+  .widget {
+      padding-left: 30px;
+      padding-right: 0;
+  }
+}
+.widget > .header > h4 {
+    padding-bottom: 4px;
+}
+.widget a {
+    color: #0077D7
+}
+.widget .label {
+    display: block;
+    padding-top: 5px;
+}
+.widget .ability-group > li.current {
+    display: none;
+}
+.widget .ability-group li a {
+    display: block;
+}
+.widget .ability-group > li .more-info {
+    display: block;
+    margin-top: 6px;
+}
+.widget .ability-group > li .more-info {
+    white-space: nowrap;
+}
+
+/* SLIDER STYLES */
+
+.item-section .flexslider {
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: max-height 300ms ease 0s;
+    -moz-transition: max-height 300ms ease 0s;
+    transition: max-height 300ms ease 0s;
+}
+.item-section.inactive .flexslider {
+    max-height: 0;
+}
+.item-section .flexslider ul.slides > li:first-child {
+    margin-left: -15px;
+}
+.item-section .flexslider ul.slides > li {
+    margin: 0;
+    min-width: 185px;
+    max-width: 185px;
+    padding: 0 15px;
+}
+  </style>
+</head>
+<body>
+  <nav>
+  <ul class="top-level">
+    <li class="has-children"><h1><a th:href="@{/}" href="#">Explore Library</a></h1>
+      <ul class="sub-level-1">
+        <li class="has-children"><a href="#">Maths</a>
+          <ul class="sub-level-2">
+            <li class="has-children"><a href="#">Year 1</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition and subtraction</a></li>
+                <li><a href="#">Number - multiplication and division</a></li>
+                <li><a href="#">Number - fractions</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Geometry - position and direction</a></li>
+              </ul>
+            </li>
+            <li class="has-children"><a href="#">Year 2</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition and subtraction</a></li>
+                <li><a href="#">Number - multiplication and division</a></li>
+                <li><a href="#">Number - fractions</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Geometry - position and direction</a></li>
+                <li><a href="#">Statistics</a></li>
+              </ul>
+            </li>
+            <li class="has-children"><a href="#">Year 3</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition and subtraction</a></li>
+                <li><a href="#">Number - multiplication and division</a></li>
+                <li><a href="#">Number - fractions</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Statistics</a></li>
+              </ul>
+            </li>
+            <li class="has-children"><a href="#">Year 4</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition and subtraction</a></li>
+                <li><a href="#">Number - multiplication and division</a></li>
+                <li><a href="#">Number - fractions (including decimals)</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Geometry - position and direction</a></li>
+                <li><a href="#">Statistics</a></li>
+              </ul>
+            </li>
+            <li class="has-children"><a href="#">Year 5</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition and subtraction</a></li>
+                <li><a href="#">Number - multiplication and division</a></li>
+                <li><a href="#">Number - fractions (including decimals and percentages)</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Geometry - position and direction</a></li>
+                <li><a href="#">Statistics</a></li>
+              </ul>
+            </li>
+            <li class="has-children"><a href="#">Year 6</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition, subtraction, multiplication and division</a></li>
+                <li><a href="#">Number - Fractions (including decimals and percentages)</a></li>
+                <li><a href="#">Ratio and proportion</a></li>
+                <li><a href="#">Algebra</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Geometry - position and direction</a></li>
+                <li><a href="#">Statistics</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="has-children"><a href="#">Computing</a>
+          <ul class="sub-level-2">
+            <li class="has-children"><a href="#">Year 1</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition and subtraction</a></li>
+                <li><a href="#">Number - multiplication and division</a></li>
+                <li><a href="#">Number - fractions</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Geometry - position and direction</a></li>
+              </ul>
+            </li>
+            <li class="has-children"><a href="#">Year 2</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition and subtraction</a></li>
+                <li><a href="#">Number - multiplication and division</a></li>
+                <li><a href="#">Number - fractions</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Geometry - position and direction</a></li>
+                <li><a href="#">Statistics</a></li>
+              </ul>
+            </li>
+            <li class="has-children"><a href="#">Year 3</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition and subtraction</a></li>
+                <li><a href="#">Number - multiplication and division</a></li>
+                <li><a href="#">Number - fractions</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Statistics</a></li>
+              </ul>
+            </li>
+            <li class="has-children"><a href="#">Year 4</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition and subtraction</a></li>
+                <li><a href="#">Number - multiplication and division</a></li>
+                <li><a href="#">Number - fractions (including decimals)</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Geometry - position and direction</a></li>
+                <li><a href="#">Statistics</a></li>
+              </ul>
+            </li>
+            <li class="has-children"><a href="#">Year 5</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition and subtraction</a></li>
+                <li><a href="#">Number - multiplication and division</a></li>
+                <li><a href="#">Number - fractions (including decimals and percentages)</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Geometry - position and direction</a></li>
+                <li><a href="#">Statistics</a></li>
+              </ul>
+            </li>
+            <li class="has-children"><a href="#">Year 6</a>
+              <ul class="sub-level-3">
+                <li><a href="#">Number - number and place value</a></li>
+                <li><a href="#">Number - addition, subtraction, multiplication and division</a></li>
+                <li><a href="#">Number - Fractions (including decimals and percentages)</a></li>
+                <li><a href="#">Ratio and proportion</a></li>
+                <li><a href="#">Algebra</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Geometry - properties of shapes</a></li>
+                <li><a href="#">Geometry - position and direction</a></li>
+                <li><a href="#">Statistics</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<script>
+  $(document).ready(function() {
+  
+  // Work out max height of ul sub level uls and add the max value to all ul's
+  var navmenuHeights = $('nav ul[class*="sub-level"]');
+  var max = -1;
+  navmenuHeights.each(function() {
+    var h = $(this).height(); 
+    max = h > max ? h : max;
+  });
+  navmenuHeights.css("height", max+"px");
+});
+  </script>
+  </body>
+</html>

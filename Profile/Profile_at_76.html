@@ -1,0 +1,182 @@
+<html>
+<head>
+<title>Profile_at_76</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="jquery-3.4.1.min.js"></script>
+
+<style>
+@use postcss-cssnext;
+ :root {
+	 --dark: #1e293a;
+	 --green: #00fcbb;
+}
+ #page {
+	 width: 100%;
+	 height: 100vh;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 background: linear-gradient(to right, #f600b3, #ffaa76);
+}
+ .card {
+	 display: flex;
+	 width: 38rem;
+	 height: 25rem;
+	 border-radius: 0.6rem;
+	 overflow: hidden;
+	 position: relative;
+	 font-family: "Poppins", sans-serif;
+}
+ .half {
+	 width: 50%;
+}
+ .img-container img {
+	 display: block;
+	 width: 100%;
+	 height: 100%;
+	 object-fit: cover;
+	 filter: grayscale(100%);
+	 transform: scale(1.6);
+}
+ .half-right {
+	 background-color: var(--dark);
+	 padding: 1.5rem 1rem 4rem 1rem;
+	 position: relative;
+}
+ .half-right .online {
+	 position: absolute;
+	 right: 2rem;
+	 color: #487098;
+	 font-size: 0.65rem;
+}
+ .half-right .online:after {
+	 content: "";
+	 display: block;
+	 width: 0.4rem;
+	 height: 0.4rem;
+	 background-color: var(--green);
+	 border-radius: 50%;
+	 position: absolute;
+	 top: 50%;
+	 left: 120%;
+	 transform: translate(-50%, -50%);
+	 margin-left: 0.2rem;
+}
+ .half-right .name {
+	 font-size: 1.7rem;
+	 background: linear-gradient(#f83487, #fe8361);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+}
+ .half-right h3 {
+	 color: var(--green);
+	 margin-top: 1rem;
+}
+ .half-right button {
+	 background: linear-gradient(to right, var(--green), #00d8d4);
+	 font-size: 0.7rem;
+	 padding: 0.4rem 1.8rem;
+	 border-radius: 1.8rem;
+	 position: absolute;
+	 bottom: 3rem;
+	 right: 2rem;
+	 cursor: pointer;
+}
+ .half-right p {
+	 color: #487098;
+	 font-size: 0.65rem;
+	 margin-top: 0.4rem;
+}
+ .triangle {
+	 position: absolute;
+	 bottom: -0.1rem;
+	 width: 100%;
+	 height: 7rem;
+	 background: linear-gradient(#fe8361, #f83487);
+	 clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+ .triangle ul {
+	 width: 35%;
+	 position: absolute;
+	 bottom: 2rem;
+	 left: 2rem;
+	 display: flex;
+	 justify-content: space-between;
+}
+ .triangle a {
+	 width: 1.2rem;
+	 height: 1.2rem;
+	 font-size: 0.8rem;
+	 background-color: #fff;
+	 color: #f83487;
+	 border-radius: 50%;
+	 text-align: center;
+	 line-height: 1.2rem;
+}
+ .triangle span {
+	 position: absolute;
+	 bottom: 0.5rem;
+	 left: 50%;
+	 transform: translateX(-50%);
+	 font-size: 0.55rem;
+	 color: white;
+}
+ .fa-plus {
+	 position: absolute;
+	 bottom: 5.2rem;
+	 left: 2rem;
+	 width: 2.5rem;
+	 height: 2.5rem;
+	 border-radius: 50%;
+	 background: linear-gradient(#fd1999, #a60fe7);
+	 text-align: center;
+	 line-height: 2.5rem;
+	 font-size: 1rem;
+	 color: white;
+}
+
+</style>
+</head>
+<body>
+<div id="page">
+  <div class="card">
+    <div class="half half-left">
+      <div class="img-container">
+        <img src="https://images.unsplash.com/photo-1481578279695-5864d6d6ff2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cafa2bd02d15824d147667f8e72b090&auto=format&fit=crop&w=2134&q=80" alt="">
+      </div>
+    </div>
+    <div class="half half-right">
+      <a href="" class="online">online</a>
+      <h2 class="name">Mary Jane</h2>
+      <p>(Singer, Model)</p>
+      <h3 class="bio">Bio</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ligula nisl penatibus purus, habitasse varius sociis cras malesuada lacus bibendum montes rhoncus et primis non, odio augue potenti hendrerit litora eros vulputate fames dui cursus. Tincidunt et litora ligula dictumst rutrum class viverra vestibulum, maecenas metus leo facilisis a lobortis erat hendrerit, aptent nibh inceptos cras ornare at blandit. Orci commodo facilisi facilisis nisl et per duis dictumst pretium nascetur dui tempor.</p>
+      <h3 class="location">Location</h3>
+      <p>Bucharest, Romania</p>
+      <button>Message</button>
+    </div>
+    <div class="triangle">
+      <ul>
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-skype"></a></li>
+        <li><a href="#" class="fa fa-youtube-play"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+        <li><a href="#" class="fa fa-snapchat-ghost"></a></li>
+      </ul>
+      <span>Member Since 2015</span>
+    </div>
+    <a href="#" class="fa fa-plus"></a>
+  </div>
+</div>
+<script>
+</script>
+</body>
+</html>

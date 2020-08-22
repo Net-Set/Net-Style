@@ -1,0 +1,253 @@
+<html>
+<head>
+<title>home_at_69</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="jquery-3.4.1.min.js"></script>
+
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 80%;
+
+    color: #232629;
+    background: url("http://razitazi.com/img/CDFFE6C72E.jpg") no-repeat center center fixed;
+    background-color: #232629;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+a {
+    color: #232629;
+}
+p {
+    line-height: 1.7;
+}
+h2 {
+    font-family: "Lora", serif;
+    font-size: 1.7em;
+    line-height: 1;
+
+    letter-spacing: 2px;
+}
+div {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+button:focus {
+    outline: none;
+}
+/* THAT FIXED HEADER */
+header.banner {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+/* MENU TOGGLE ICON */
+#menu-toggle {
+    position: relative;
+
+    width: 51px;
+    height: 51px;
+
+    cursor: pointer;
+
+    border: 1px solid #fff;
+    -webkit-border-radius: 50px;
+       -moz-border-radius: 50px;
+            border-radius: 50px;
+    background: transparent;
+}
+#menu-toggle:before,
+#menu-toggle:after {
+    position: absolute;
+
+    content: "";
+    content: "";
+    -webkit-transition: all .350s ease;
+       -moz-transition: all .350s ease;
+         -o-transition: all .350s ease;
+            transition: all .350s ease;
+
+    background-color: #fff;
+}
+
+#menu-toggle:before {
+    top: 12px;
+    left: 25px;
+
+    width: 1px;
+    height: 27px;
+}
+#menu-toggle:after {
+    top: 25px;
+    left: 12px;
+
+    width: 27px;
+    height: 1px;
+}
+#menu-toggle:hover:before,
+#menu-toggle:hover:after {
+    -webkit-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+            transform: rotate(5deg);
+}
+.open #menu-toggle:before,
+.open #menu-toggle:after {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+/* A COMES AFTER B */
+.brand {
+    float: right;
+    height: 51px;
+
+    font-size: 70px;
+    font-weight: 100;
+    line-height: .6;
+}
+.brand a {
+    -webkit-transition: all .350s ease;
+       -moz-transition: all .350s ease;
+         -o-transition: all .350s ease;
+            transition: all .350s ease;
+    text-decoration: none;
+
+    color: #ccc;
+}
+.brand a:hover {
+    cursor: pointer;
+
+    color: #fff;
+}
+.open .brand {
+    color: #fff;
+}
+/* OVERLAY MENU */
+#menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+
+    display: table;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+
+    font-family: "Lora", serif;
+
+    transition: opacity .5s, visibility .5s;
+    text-align: center;
+
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .85);
+}
+.open #menu {
+    visibility: visible;
+
+    opacity: 1;
+}
+#menu ul {
+    display: table-cell;
+    padding: 0;
+    margin-top: 30px;
+
+    list-style: none;
+
+    vertical-align: middle;
+}
+
+#menu ul li a {
+    display: block;
+
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 80px;
+
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+    text-decoration: none;
+
+    color: #fff;
+}
+#menu ul li a:hover {
+    font-size: 30px;
+}
+/* CONTENT CONTAINER */
+.container {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: -100;
+
+    max-width: 550px;
+    min-width: 200px;
+    padding: 20px 40px;
+
+    background-color: #fff;
+}
+
+</style>
+</head>
+<body>
+<header class="banner">
+  <button id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu"></button>
+  <div class="brand"><a href="https://codepen.io/collection/nqObom/">&bopf;</a></div>            
+</header>
+
+<nav id="menu" aria-hidden="true" aria-labelledby="menu-toggle" role="navigation">
+<ul>
+  <li><a href="https://codepen.io/razitazi/pen/gbXMob">Life is important</a></li>
+  <li><a href="https://codepen.io/razitazi/pen/gbXMob">No it really isn't</a></li>
+  <li><a href="https://codepen.io/razitazi/pen/gbXMob">I'm serious dude, not that important</a></li>
+</ul>
+</nav>
+            
+<div class="container" role="main">
+  <article>
+    <h2>Accessible fullscreen overlay menu</h2>
+      <p>Accessibility got more and more important now when the web is turning in to the everyday toolbox for most people in the western world. So, I decided to focus on that in this menu.</p>
+      <p>This is the second entry in my <strong><a href="https://codepen.io/collection/nqObom/">A to J</a></strong> navigation collection.
+      <p>Feel free to fork, play and improve!</p>
+  </article>
+</div>
+<script>
+$(document).ready(function() {
+    $('#menu-toggle, #menu > ul > li > a').click(function(e) { 
+        var $toggle = $(this); 
+        var $menu = $('#' + $(this).attr('aria-controls')); 
+    
+        if ($menu.attr('aria-hidden') == 'true') {
+            $('body').addClass('open');
+            $menu.attr('aria-hidden', 'false');
+            $toggle.attr('aria-expanded', 'true');
+        }
+        else if ($menu.attr('aria-hidden') == 'false') {
+            $('body').removeClass('open');
+            $menu.attr('aria-hidden', 'true');
+            $toggle.attr('aria-expanded', 'faremove'); 
+        }
+    });
+});
+</script>
+</body>
+</html>

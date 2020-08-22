@@ -1,0 +1,210 @@
+<html>
+
+<head>
+<title>Profile_at_90</title>
+<style>
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+@use postcss-cssnext;
+:root {
+  --dark: #1E293A;
+  --green: #00FCBB;
+}
+#page {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#F600B3) , to(#FFAA76));
+  background: -o-linear-gradient(left, #F600B3 , #FFAA76);
+  background: linear-gradient(to right, #F600B3 , #FFAA76);
+}
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 38rem;
+  height: 25rem;
+  border-radius: .6rem;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+.half {
+  width: 50%;
+  
+}
+.img-container {
+  & img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+            transform: scale(1.6)
+  }
+}
+.half-right {
+  background-color: var(--dark);
+  padding: 1.5rem 1rem 4rem 1rem;
+  position: relative;
+  & .online {
+    position: absolute;
+    right: 2rem;
+    color: #487098;
+    font-size: .65rem;
+    
+    &:after {
+      content: '';
+      display: block;
+      width: .4rem;
+      height: .4rem;
+      background-color: var(--green);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 120%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      margin-left: .2rem;
+    }
+  }
+  & .name {
+    font-size: 1.7rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F83487), to(#FE8361));
+    background: -o-linear-gradient(#F83487, #FE8361);
+    background: linear-gradient(#F83487, #FE8361);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  & h3 {
+    color: var(--green);
+    margin-top: 1rem;
+  }
+  & button {
+    background: -webkit-gradient(linear, left top, right top, from(var(--green)) , to(#00D8D4));
+    background: -o-linear-gradient(left, var(--green) , #00D8D4);
+    background: linear-gradient(to right, var(--green) , #00D8D4);
+    font-size: .7rem;
+    padding: .4rem 1.8rem;
+    border-radius: 1.8rem;
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+  & p {
+    color: #487098;
+    font-size: .65rem;
+    margin-top: .4rem;
+  }
+}
+.triangle {
+  position: absolute;
+  bottom: -.1rem;
+  width: 100%;
+  height: 7rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FE8361), to(#F83487));
+  background: -o-linear-gradient(#FE8361, #F83487);
+  background: linear-gradient(#FE8361, #F83487);
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+          clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  & ul {
+    width: 35%;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  & a {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: .8rem;
+    background-color: #fff;
+    color: #F83487;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.2rem;
+  }
+  & span {
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: .55rem;
+    color: white;
+  }
+}
+.fa-plus {
+  position: absolute;
+  bottom: 5.2rem;
+  left: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FD1999), to(#A60FE7));
+  background: -o-linear-gradient(#FD1999, #A60FE7);
+  background: linear-gradient(#FD1999, #A60FE7);
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+<div id="page">
+  <div class="card">
+    <div class="half half-left">
+      <div class="img-container">
+        <img src="https://images.unsplash.com/photo-1481578279695-5864d6d6ff2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cafa2bd02d15824d147667f8e72b090&auto=format&fit=crop&w=2134&q=80" alt="">
+      </div>
+    </div>
+    <div class="half half-right">
+      <a href="" class="online">online</a>
+      <h2 class="name">Mary Jane</h2>
+      <p>(Singer, Model)</p>
+      <h3 class="bio">Bio</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ligula nisl penatibus purus, habitasse varius sociis cras malesuada lacus bibendum montes rhoncus et primis non, odio augue potenti hendrerit litora eros vulputate fames dui cursus. Tincidunt et litora ligula dictumst rutrum class viverra vestibulum, maecenas metus leo facilisis a lobortis erat hendrerit, aptent nibh inceptos cras ornare at blandit. Orci commodo facilisi facilisis nisl et per duis dictumst pretium nascetur dui tempor.</p>
+      <h3 class="location">Location</h3>
+      <p>Bucharest, Romania</p>
+      <button>Message</button>
+    </div>
+    <div class="triangle">
+      <ul>
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-skype"></a></li>
+        <li><a href="#" class="fa fa-youtube-play"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+        <li><a href="#" class="fa fa-snapchat-ghost"></a></li>
+      </ul>
+      <span>Member Since 2015</span>
+    </div>
+    <a href="#" class="fa fa-plus"></a>
+  </div>
+</div>
+<script>
+</script>
+</body>
+</html>

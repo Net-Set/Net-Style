@@ -1,0 +1,378 @@
+<html>
+				<head>
+						<meta charset="UTF-8" />
+				
+						<title>Coders Net</title>
+						<!--link to js and wow.js code-->
+    					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    					<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+						<!--Font-familes my website uses-->
+						<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+    					<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+                        <style>
+                            body{
+  background: white;
+}
+.title2{
+  padding-top: 20px;
+}
+.home{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title{
+  font-family: Quicksand, sans-serif;
+  color: gray;
+  font-size: 50px;
+  margin-top: 160px;
+  text-align: left;
+  margin-left: 30px;
+}
+.description{
+  font-family: Quicksand, sans-serif;
+  color: gray;
+  margin-top: 20px;
+}
+.creator{
+  font-family: Quicksand, sans-serif;
+  color: white;
+  padding-top: 50px;
+  padding-left: 20px;
+  text-align: left;
+}
+.creation-bar{
+  background: #2C3539;
+  width: 101.2%;
+  height: 120px;
+  margin-left: -0.6%;
+  margin-bottom: -1%;
+}
+.seperation-line{
+  background: #43C6DB;
+  width: 90%;
+  height: 5px;
+  border-radius: 20px;
+}
+.projects{
+   margin-bottom: 185px;
+   background: none;
+   border: 2px solid #FFA62F;
+   border-radius: 10px;
+   font-family: Quicksand, sans-serif;
+   color: #FFA62F;
+   font-weight: bold;
+   width: 120px;
+   height: 40px;
+   margin-top: 80px;
+   cursor: pointer;
+   font-size: 15px;
+  
+   -webkit-transition: 0.8s;
+   -moz-transition: 0.8s;
+   -o-transition: 0.8s;
+   transition: 0.8s;
+}
+.projects:hover{
+  background: #FFA62F;
+  color: white;
+  width: 140px;
+}
+.top{
+  background: black;
+  width: 40px;
+  height: 4px;
+  border-radius: 20px;
+}
+.center{
+  background: black;
+  width: 40px;
+  height: 4px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+.bottom{
+  background: black;
+  width: 40px;
+  height: 4px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+.menu-icon{
+  margin-left: 96%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+.menu-page{
+  top: 0;
+    background:  black  repeat left;
+    z-index: 99;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    -webkit-transition: .50s;
+    -moz-transition: .50s;
+    -o-transition: .50s;
+    transition: .50s;
+    opacity: 0.8;
+    right: -100%;
+}
+.menu-page ul{
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+.appear{
+  right:0;
+}
+.menu{
+  opacity: 0;
+  -webkit-transition: 0.8s;
+   -moz-transition: 0.8s;
+   -o-transition: 0.8s;
+   transition: 0.8s;
+}
+.menu2{
+  opacity: 1;
+  
+  -webkit-transition: 0.8s;
+   -moz-transition: 0.8s;
+   -o-transition: 0.8s;
+   transition: 0.8s;
+}
+.menu-page li{
+  text-align:center;
+  margin-top:20vh;
+  display:block;
+}
+.menu-page h3 {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    opacity: 1;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+    font-family: Quicksand, sans-serif;
+  cursor: pointer;
+}
+.menu-page h3:hover{
+  font-size:40px;
+}
+.top2{
+  background: white;
+  width: 40px;
+  height: 4px;
+  border-radius: 20px;
+  
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.bottom2{
+  background: white;
+  width: 40px;
+  height: 4px;
+  border-radius: 20px;
+  
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  
+  margin-top: -0.3%;
+}
+.menu-icon2{
+  margin-top: 5vh;
+  cursor: pointer;
+  margin-left: 20px;
+}
+/*blog*/
+.blog-description{
+  color: gray;
+  font-family: Quicksand, sans-serif;
+  text-align: center;
+}
+.blog-title{
+  color: gray;
+  font-family: Quicksand, Sans-serif;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 50px;
+  margin-top: 150px;
+}
+.blog-seperation-line{
+  background: #43C6DB;
+  width: 90%;
+  height: 5px;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+/*projects*/
+.projects-description{
+  color: gray;
+  font-family: Quicksand, sans-serif;
+  text-align: center;
+}
+.projects-title{
+  color: gray;
+  font-family: Quicksand, Sans-serif;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 50px;
+  margin-top: 50px;
+}
+.projects-seperation-line{
+  background: #43C6DB;
+  width: 90%;
+  height: 5px;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+                        </style>
+    			</head>
+    <body>
+    			
+    					<div class="menu-icon">
+                				<div class="top"></div>
+                				<div class="center"></div>
+                				<div class="bottom"></div>
+    					</div>
+            			<div class="menu-page">
+               					<div class="menu-icon2">
+                						<div class="top2"></div>
+                						<div class="bottom2"></div>
+            					</div>
+              					<ul>
+              							<li><h3 class="home-menu-page">Home</h3></li>
+              							<li><h3 class="projects-menu-page">Projects</h3></li>
+              							<li><h3 class="blog-menu-page">Blog</h3></li>
+             					</ul>
+            			</div>
+            			
+    					<div class="main">
+    							<div class="home">
+    									<div class="title-area">
+    											<h1 class="title">Coders Net</h1>
+               
+   <div class="seperation-line">
+    											</div>
+    											<div class="description-area">
+    													<h3 class="description">Hello and welcome to Coders Net, here you can see the projects I have created</h3>
+    											</div>
+    											<div class="projects-button">
+          												<button class="projects">Projects</button>
+    											</div>
+    		
+    											<div class="creation-bar">
+    													<h3 class="creator">Created by Anshul Kashyap</h3>
+    											</div>
+    									</div>
+    							</div>
+    							<div class="blog">
+    									<div class="blog-title-area">
+    											<h1 class="blog-title">Blog</h1>
+    											<div class="blog-seperation-line"></div>
+    											<div class="blog-description-area">
+    													<h3 class="blog-description">Here you I'll tell you about my websites and how I made them</h3>
+    											</div>
+    									</div>
+    									<div class="blog-projects">
+    													<h3 class=""></h3>
+    									</div>
+    							</div>
+                <div class="projects-area">
+    									<div class="projects-title-area">
+    											<h1 class="projects-title">Projects</h1>
+     <div class="projects-seperation-line"></div>
+    											<div class="description-area">
+    													<h3 class="projects-description">Click below to see my projects</h3>
+                            <div class="projects-table">
+    											<table class="table-projects">
+    													<tr>
+    															<td></td>
+    													</tr>
+    													<tr>
+    															<td>
+     <div class="picture-page">
+           <div class="picture-page-title">
+                 <h1 class="projects-page-title">
+     </td>
+    													</tr>
+    											</table>
+    									</div>
+    											</div>
+    									</div>
+    							</div>
+    					</div>
+                        <script>
+                            $(document).ready(function(){
+        $(".blog").hide();
+        $(".projects-area").hide();
+        
+        $(".title").hide();
+        $(".description").hide();
+  
+        $(".title").fadeIn(1000);
+        $(".description").fadeIn(2000);
+  
+        $(".menu-icon").click(function(){
+                $(".menu-icon").fadeOut(1000);
+                $(".menu-page").toggleClass("appear");
+          $(".title").addClass("title2");
+        });
+        $(".menu-icon2").click(function(){
+                $(".menu-page").toggleClass("appear");
+                $(".menu-icon").fadeIn(1000);
+        });
+        $(".home-menu-page").click(function(){
+                $(".blog").hide();
+                $(".projects-area").hide();
+                $(".home").hide();
+          $(".menu-icon").fadeIn(1000);
+        
+          $(".menu-page").toggleClass("appear");
+                
+                $(".title").hide();
+                $(".description").hide();
+  
+                $(".title").fadeIn(1000);
+                $(".description").fadeIn(2000);
+                
+                $(".home").fadeIn();
+                
+        });
+        $(".blog-menu-page").click(function(){
+                $(".blog").hide();
+                $(".projects-area").hide();
+                $(".home").hide();
+        $(".menu-icon").addClass("menu2");
+        
+          $(".menu-page").toggleClass("appear");
+                
+                $(".blog").fadeIn(1000);
+        });
+        $(".projects-menu-page").click(function(){
+                $(".blog").hide();
+                $(".projects-area").hide();
+                $(".home").hide();
+        $(".menu-icon").addClass("menu2");
+        
+          $(".menu-page").toggleClass("appear");
+                
+                
+                $(".projects-area").fadeIn(1000);
+        });
+  
+});
+                        </script>
+    			</body>
+    	</html>

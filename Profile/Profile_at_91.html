@@ -1,0 +1,636 @@
+<html>
+<head>
+<title>Profile_at_91</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700|Shadows+Into+Light');
+/*
+font-family: 'Muli', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+*/
+
+
+/* _______________________________________
+          Header Section/ Menu
+----------------------------------------*/
+
+
+
+.header {
+  font-family: 'Muli', sans-serif;
+  font-weight: 700;
+  font-size: 12pt;
+  height: 50px;
+  padding-top: 12px;
+  background-color: #2b3e42;
+  color: #f7f3e8;
+  position: fixed;
+  width: 100%;
+  display: block;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+  .header .logo a {
+    text-decoration: none;
+    color: white;
+  }
+
+.button1:hover, .button2:hover, .button3:hover {
+  transition: 0.2s ease;
+  color: #cac6b9;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.links {
+  color: #f2583e;
+}
+
+.links:hover {
+  color: #7d2d20;
+  text-decoration: none;
+}
+
+
+/*-----------------------------------
+            LINKS MENU
+------------------------------------*/
+
+.linksmenu {
+  color: white;
+  text-decoration: none;
+}
+
+.linksmenu:hover {
+  color: #bababa;
+  text-decoration: none;
+}
+
+
+/*-----------------------------------
+              Media Query
+------------------------------------*/
+
+@media (max-width: 990px) {
+  .col-xs-4, .col-xs-12 {
+    text-align: center;
+  }
+  
+  .header {
+    height: 80px;
+  }
+  
+  .description {
+  top: 30px;
+  transition: 1s ease;
+}
+
+
+  
+}
+
+
+
+
+/*--------------------------------
+          Description Area
+--------------------------------*/
+
+.flexbox {
+  display: flex;
+  margin-top: 110px;
+  font-family: 'Muli', sans-serif;
+  color: #2b3e42;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portrait {
+  border-radius: 50%;
+  width: auto;
+  height: 320px;
+  align-self: center;
+}
+
+.aboutme {
+  width: 55%;
+  align-self: center;
+}
+
+.aboutme p {
+  text-align: justify;
+}
+.aboutme h2 {
+  text-align: center;
+}
+.alignitem {
+  margin-left: 50px;
+}
+
+          @media (max-width: 990px) {
+
+            .portrait {
+              height: 250px;
+            }
+
+            .aboutme {
+              width: 85%;
+            }
+            .alignitem {
+            margin-left: 0px;
+          }
+
+        }
+
+.drawline {
+  margin-top: -20px;
+}
+/*----------------------------------
+              Values
+----------------------------------*/
+.values {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  width: 85%;
+
+}
+
+
+
+/*-------------------------------------------------
+                  BUTTON SETUP
+--------------------------------------------------*/
+
+.mabutton {
+  font-family: 'Muli', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  width: 370px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 3px solid #2b3e42;
+  padding: 13px 20px;
+  color: #2b3e42;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.mabutton:hover {
+  background-color: #2b3e42;
+  color: #f7f3e8;
+}
+
+.mabutton:active {
+  background-color: #162022;
+  color: #f7f3e8;
+  border: 3px solid #162022;
+}
+
+  @media (max-width: 1520px) {
+    .mabutton {
+      width: 320px;
+    }
+  }
+
+  @media (max-width: 1270px) {
+    .mabutton {
+      width: 270px;
+    }
+  }
+
+@media (max-width: 990px) {
+  .mabutton {
+    margin-top: 20px;
+    width: auto;
+  }
+  
+  .values {
+    margin-top: 10px;
+    width: 80%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*----------------------------------
+        Message Box Style
+----------------------------------*/
+.msg {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 45px;
+  border-radius: 9px;
+  padding: 20px 30px;
+}
+
+.messagebox {
+  font-family: 'Muli', sans-serif;
+  font-weight: 550;
+  font-size: 16px;
+  color: #2b3e42;
+  display: none;
+}
+
+/*---------------------------------
+        PORTFOLIO LAYOUT
+----------------------------------*/
+
+#portfolio {
+  font-family: 'Muli', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: #f2583e;
+  display: block;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 55px;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolioimg {
+    width: 370px;
+    margin-top: 20px;
+    height: auto;
+}
+
+.imgdiv {
+  font-family: 'Muli', sans-serif;
+  color: #2b3e42;
+  line-height: 40px;
+  
+}
+
+@media (max-width: 1200px) {
+  .portfolioimg {
+    width: 310px;
+    margin-top: 20px;
+    height: auto;
+  }
+}
+
+@media (max-width: 990px) {
+    .portfolioimg {
+    width: 500px;
+    margin-top: 20px;
+    height: auto;
+  }
+}
+  
+@media (max-width: 560px) {
+    .portfolioimg {
+    width: 400px;
+    margin-top: 20px;
+    height: auto;
+    }
+}  
+  
+/*------------------------------
+        CONTACT SECTION
+------------------------------*/
+#cont {
+  font-family: 'Muli', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: #f2583e;
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+  .formtext {
+    border: 1px solid #d5e1dd;
+    background-color: #faf8f4;
+    border-radius: 9px;
+  }
+
+.iddescription {
+  font-family: 'Muli', sans-serif;
+}
+
+/*--------------------------
+        FORM STYLING
+---------------------------*/
+
+#yourmessage {
+  height: 100px;
+  width: 500px;
+  color: #747e80;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.sendbutton {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  background-color: #f2583e; /* orange */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 9px;
+}
+
+.input {
+  display: block;
+  margin-top: 10px;
+}
+
+.input:first-child{
+  margin-top: 25px;
+}
+
+.input p {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: 'Muli', sans-serif;
+}
+
+input[type=text], input[type=email]{
+  border:1px solid #9ea8aa;
+  border-radius: 5px;
+}
+
+/*-------------------------------
+          SOCIAL ICONS
+--------------------------------*/
+
+.socialicons ul li i {
+  color: #2b3e42;
+  font-size: 30px;
+
+}
+
+.socialicons ul li i:hover {
+  color: #f2583e;
+}
+
+.socialicons ul li {
+  display: inline-block;
+  
+}
+
+ul {
+list-style-type: none;
+  padding:0;
+}
+
+.alignicons {
+  margin-top: -35px;
+  text-align: center;
+}
+
+/*----------------------
+        FOOTER
+----------------------*/
+
+footer {
+  text-align: center;
+  line-height: 20px;
+  font-family: 'Muli', sans-serif;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  color: #2b3e42;
+}
+
+footer a {
+  color: #f2583e;
+}
+
+footer a:hover {
+  color: #953525;
+  text-decoration: none;
+}
+
+#mainmenu, #mainportfolio, #maincontact {
+  transition: 0.5s ease;
+}
+</style>
+</head>
+<body>
+<!--  Bootstrap - Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!--  Bootstrap Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!--  Bootstrap Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!------------------------------------
+            Header Area (About)
+      ------------------------------------>
+
+<!-------------------------------->
+<div class="container-fluid" id="mainmenu">
+  <header class="row header">
+    <div class="col-md-6 col-xs-12 logo" id="logo"><a href="#logo"><span style="font-weight: 300;">cristian</span> ioan</a></div>
+    <div class="col-md-2 col-xs-4 text-center button1"><a href="#mainmenu" class="linksmenu">About</a></div>
+    <div class="col-md-2 col-xs-4 text-center button2"><a href="#mainportfolio" class="linksmenu">Portfolio</a></div>
+    <div class="col-md-2 col-xs-4 text-center button3"><a href="#maincontact" class="linksmenu">Contact</a></div>
+  </header>
+
+  <!------------------------------------
+            Description Area (About)
+      ------------------------------------>
+
+  <div class="flexbox">
+    <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t31.0-8/13568878_1061203637248750_9006355874370076569_o.jpg?_nc_cat=103&_nc_ht=scontent-ber1-1.xx&oh=0f13deb5b6427540e8b9418772aceb5f&oe=5D2491F6" alt="The Profile Picture of a Web Designer" class="portrait">
+
+    <div class="aboutme">
+      <div class="alignitem">
+        <h2>Web Developer <em>"Wannabe"</em></h2>
+        <p>I am Chris and I dedicated my entire life to visual arts. I am now preparing to take this a step further and portretize the people with the help of Front-End Dev Tools. However, if you want to see how professional I can go, you can always visit
+          my <a href="http://www.cristianioan.ro" target="_blank" class="links">Professional Photography Website</a>.
+          <br><br> "Critical of his own work, a skilled and receptive professional, Cristian Ioan is someone you will want to meet personally after seeing some of his work, to invite him for your event, to hand over to him an important project you are
+          fond of, or just to invite him over a cup of tea to see how does an interesting young man as he is, looks like beyond the camera." - <strong>Maria</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------------------------
+      3 Buttons/ Values
+-------------------------------->
+
+<div class="values">
+
+  <div class="mabutton mabutton1">Self-Learning</div>
+
+  <div class="mabutton mabutton2">Sociable</div>
+
+  <div class="mabutton mabutton3">Creative</div>
+
+</div>
+
+<!-------------------------------->
+<span id="mainportfolio"></span>
+<div class="msg">
+
+  <div class="messageone messagebox"><strong>Self-Learning.</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+    make a type specimen book.</div>
+  <br>
+  <div class="messagetwo messagebox"><strong>Sociable.</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+    a type specimen book.</div>
+  <br>
+  <div class="messagethree messagebox"><strong>Creative.</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+    a type specimen book.</div>
+
+</div>
+</div>
+
+<!------------------------------------
+          PORTFOLIO LAYOUT
+------------------------------------->
+
+<p id="portfolio">PORTFOLIO</p>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-4 imgdiv"><img src="https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/15844072_1242171189208441_5720085093518398795_o.jpg?oh=07cbc9d031abbbd19693282dc2a5f766&oe=58DEE52A
+" class="portfolioimg"></div>
+
+    <div class="col-md-4 imgdiv"><img src="https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/15731983_1236101783148715_3565131867577184913_o.jpg?oh=eb9ff54c82d0c0e4066aa7af7dc03ecb&oe=58DBBB34
+" class="portfolioimg"></div>
+
+    <div class="col-md-4 imgdiv"><img src="https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/15419685_1211427115616182_6457521497194726764_o.jpg?oh=6929d8216884bf6dea1154e066a1e369&oe=58DD6D3E
+" class="portfolioimg"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-xs-12 img-responsive imgdiv"><img src="https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/14195342_1122469254511969_7203493496684234064_o.jpg?oh=2d8d2e9b182bb154a7c230946475b50c&oe=58D859FA
+" class="portfolioimg"></div>
+
+    <div class="col-md-4 imgdiv"><img src="https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/13698116_1102660763159485_5060729085016458024_o.jpg?oh=42f9b58274004082349c3916c4999851&oe=591CF808
+" class="portfolioimg"></div>
+
+    <div class="col-md-4 imgdiv"><img src="https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/13909265_1092913067467588_8212929019433469224_o.jpg?oh=96d84a3af24d42d55cd45674a1680d30&oe=5916E8BF
+" class="portfolioimg"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 imgdiv"><img src="https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/13730909_1081709171921311_6209772852488337800_o.jpg?oh=f3dca507cff377f81f16a2cd969a7f1d&oe=58E6F86B
+" class="portfolioimg"></div>
+
+    <div class="col-md-4 imgdiv"><img src="https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/13680064_1073956349363260_8619242030937853166_o.jpg?oh=19547703cefa9aef4b5420e507319858&oe=58E0A586
+" class="portfolioimg"></div>
+
+    <div class="col-md-4 imgdiv"><img src="https://scontent-frt3-1.xx.fbcdn.net/v/t31.0-8/13603611_1069504999808395_5144641255917068918_o.jpg?oh=7e626d36d373d35476b8325af9abca1f&oe=58E11827" class="portfolioimg"></div>
+  </div>
+</div>
+
+<!----------------------------------
+          CONTACT SECTION
+----------------------------------->
+
+<!------------------------------>
+<span id="maincontact"></span>
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-12 formtext">
+      <p id="cont">CONTACT</p>
+      <p class="iddescription">
+        You can contact me anytime by phone or email (preferably), or by submitting the contact form below.
+        <br> I will reply to your request as soon as possible.
+        <br><br>
+        <strong>Phone:</strong> +(4) 999 999 999
+        <br>
+        <strong>E-mail:</strong> office@wannabe.com
+      </p>
+
+      <form>
+
+        <div class="input">
+          <p>First Name</p><input type="text"></input>
+        </div>
+        <div class="input">
+          <p>Last Name</p><input type="text"></input>
+        </div>
+        <div class="input">
+          <p>Phone Number*</p><input type="text" required></input>
+        </div>
+        <div class="input">
+          <p>E-Mail*</p><input type="email" required></input>
+        </div>
+        <textarea id="yourmessage">Write me your thoughts here.</textarea>
+        <button type="button" onclick="alert('Message Sent! I will contact you soon')" class="sendbutton">The Magic Button</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<!------------------------------
+        SOCIAL ICONS
+------------------------------>
+<div class="alignicons">
+  <div class="socialicons">
+    <ul>
+      <li><a class="button social" href="https://www.facebook.com/cristianioann" target="_blank"><i class="fa fa-fw fa-facebook"></i></a></li>
+      <li><a class="button social" href="https://ro.linkedin.com/in/ioan-cristian-alexandru-b7b08a5a" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a></li>
+      <li><a class="button social" href="https://www.youtube.com/channel/UCGjAzWquSUf1Bl4vU6ZNMMg" target="_blank"><i class="fa fa-fw fa-youtube"></i></a></li>
+    </ul>
+  </div>
+</div>
+
+<!---------------------------------
+              FOOTER
+--------------------------------->
+<hr>
+<footer>
+
+  <p>Made with <strong>jQuery</strong> and <strong>Bootstrap</strong> Frameworks by <a href="http://www.cristianioan.ro">Cristian Alexandru-Ioan</a></p>
+
+  <div id="footer-below">Cristian Ioan ©
+    <script>
+      document.write(new Date().getFullYear())
+    </script>. All Rights Reversed
+  </div>
+
+</footer>
+<script>
+$(document).ready(function(){
+
+$('.mabutton1').click(function(){
+   $('.messageone').slideToggle(350);
+});
+
+$('.mabutton2').click(function(){
+   $('.messagetwo').slideToggle(350);
+});
+  
+$('.mabutton3').click(function(){
+   $('.messagethree').slideToggle(350);
+});
+  
+});
+
+</script>
+</body>
+
+</html>

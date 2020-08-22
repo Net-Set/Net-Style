@@ -1,0 +1,300 @@
+<html>
+<head>
+<title>Profile_at_69</title>
+<style>
+@font-face {
+  font-family: Whitney;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://discordapp.com/assets/d153359b5d87601d2b9c708b7ae2db02.woff) format('woff')
+}
+.button {
+    font-size: 3em;
+    padding: 12px 18px 11px 19px;
+    background-color: #7289DA;
+    color: #fff;
+    border: 2px solid #7289da;
+    border-radius: 100%;
+    text-decoration: none;
+    font-family: 'Whitney', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #fff;
+  color:#7289DA;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background-color: #23272A;
+  border-radius: 10px;
+  width: 500px;
+  position: relative;
+  overlay:hidden;
+  transition: all 5s ease-in-out;
+}
+.tag{font-size:14px;color:gray;}
+.popup h2 {
+    margin-top: -85px;
+    margin-bottom: 14%;
+    margin-left: 19%;
+    position:absolute;
+    color: #fdfafa;
+    font-family: 'Whitney', sans-serif;
+    font-size: 18px;
+}
+.popup .close {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.popup .close:hover {
+  color: red;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  text-align:right;
+}
+
+@media screen and (max-width: 480px){
+  .box{
+    width: 70%;
+    height:auto;
+  }
+  hr.fot {display:none;}
+  .popup{
+    width: 70%;
+    height:auto;
+    text-align: center !important;
+  }
+  #client_logos {
+    background-color: #fff !important;
+    border-radius: 2em;
+    line-height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -80px;
+    }
+  .discord{
+    background: #43b581 !important;
+    text-transform: uppercase;
+    font-size: 13px !important;
+    left: 50%;
+    top: 50%;
+    margin-left: -68px !important;
+    margin-top: 50px !important;
+  }
+  .discord:hover{opacity:0.8;}
+  .fotnot{margin-top: 70px;padding-top: 15px;text-align: center;}
+  .popup h2 {
+        margin: auto;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    font-size: 17px;
+    text-align: center !important;
+  }
+}
+
+.discord {
+    font-size: 1em;
+    padding: 7px;
+    background-color: #7289da;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Whitney', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+	  text-align: center;
+    margin-top: -92px;
+    margin-left: -152px;
+    position: absolute;
+}
+.discord:hover {transform: translateY(4px);box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+.discord:before {
+   font-family: FontAwesome;
+   content: "\f0ea";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+.fotnot{font-size:12px;color:#96a2b2;font-family: 'Whitney', sans-serif;}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 61%;
+    margin-left: -5%;
+    margin-top: -5%
+}
+
+#client_logos {
+    background-color:transparent;
+    display: inline-block;
+    width:150px;
+    }
+hr.fot {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    position: absolute;
+    margin-left: -20px !important;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 0px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    height: 20px;
+    line-height: 12px;
+    padding: 6px !important;
+    background-color: black;
+    color: #fff;
+    font-size:12px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    font-family: 'Whitney', sans-serif;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+</style>
+</head>
+
+<body>
+
+<script src="https://use.fontawesome.com/9d03eba9c5.js"></script>
+
+<div class="center">
+  
+	<a class="button" href="#popup1"><i class="icon fab fa-discord"></i></a>Click Me
+</div>
+
+<div id="popup1" class="overlay">
+  <a class="cancel" href="#"></a>
+	<div class="popup">
+    <p><img src="https://pbs.twimg.com/profile_images/1195074860894105600/6S3Cxx5m.png" alt="avatar" style="width:90px;height:90px;margin-right:10px;border-radius:50%;pointer-events: none;"/><img src="https://4.bp.blogspot.com/-7zcjlUKOyLc/WvPb8pTXX4I/AAAAAAAAA0k/DK7OU6n7QaUuCgi3r32bEV-ND0zPrr9RQCLcBGAs/s1600/on.png" alt="online" style="width: 18px;height: 18px;margin-top: 65px;margin-left: -33px;border: 3px solid #35383d;border-radius: 100%;position: absolute;pointer-events: none;"/>
+    <h2>Jegox<h class="tag">#0989</h></br><div id="client_logos">
+<div class="tooltip"><img style="display: inline; margin: 0 5px;cursor: pointer;pointer-events: none;" title="" src="https://4.bp.blogspot.com/-1jDY5J02Tno/WvLQech35AI/AAAAAAAAAzo/E20a5AEw6xQ-MZ3_ogKAdVVUXWLmaVS3wCLcBGAs/s1600/disstaff.png" alt="" width="18" height="19" />
+  <span class="tooltiptext">Discord Staff</span>
+</div>
+    <div class="tooltip"><img style="display: inline; margin: 0 -8px;cursor: pointer;pointer-events: none;" title="" src="https://2.bp.blogspot.com/-ezDtKOsaZrA/WvLQfkneL-I/AAAAAAAAAz4/s51CJXuzNzYIdU4z6KmPeLIprh0FHqWeACLcBGAs/s1600/part.png" alt="" width="24" height="21"/>
+      <span class="tooltiptext">Discord Partner</span>
+</div>
+    
+<div class="tooltip"><img style="display: inline; margin: 0 6px;cursor: pointer;pointer-events: none;" title="" src="https://2.bp.blogspot.com/-GTwqQ8AIJtU/WvLQen5p2DI/AAAAAAAAAzw/wLBAekFAINA4aYWNLi2I1FYSyL3uZuaJwCLcBGAs/s1600/hyp.png" alt="" width="21" height="21" />
+  <span class="tooltiptext">Discord HypeSquad</span>
+</div>
+    
+    <div class="tooltip"><img style="display: inline; margin: 0 -12px;cursor: pointer;pointer-events: none;" title="" src="https://3.bp.blogspot.com/-uBJbMo2AiRM/WvLQehTiMDI/AAAAAAAAAzs/H9FWOtcy5oQmLhWIaKbmck6tY_oCqJstgCLcBGAs/s1600/bh.png" alt="" width="20" height="19" />
+      <span class="tooltiptext">Discord Bug Hunter</span>
+</div>
+      
+<div class="tooltip"><img style="display: inline; margin: 0 7px;cursor: pointer;pointer-events: none;" title="" src="https://1.bp.blogspot.com/-GegV9Ca-wSU/WvLQfeKTbbI/AAAAAAAAAz0/sTTtByBv1_0466-2YeWyQimdlqO0-PBugCLcBGAs/s1600/nitro.png" alt="" width="24" height="19"/>
+    <span class="tooltiptext">Nitro subscriber since Nov 29, 1994 12:00 AM</span>
+</div>
+    
+</div> </h2></p>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+      <button class="discord">Click to copy ID</button>
+      <hr class="fot">
+      </br><p class="fotnot">Copy ID and search in Discord</p>
+		</div>
+	</div>
+</div>
+
+</div> 
+
+
+<script>
+let btn = document.querySelector('button');
+let text = 'Jegox#0989';
+let copy;
+
+if (navigator.clipboard) {
+	copy = function () {
+		navigator.clipboard.writeText(text).catch(fallback);
+	};
+} else {
+	let input = document.createElement('input');
+	input.value = text;
+	input.style.position = 'absolute';
+
+	copy = function () {
+		document.body.append(input);
+		input.select();
+
+		try {
+			let success = document.execCommand('copy');
+			if (!success) fallback();
+		} catch (e) {
+			fallback();
+		}
+
+		input.remove();
+	};
+}
+
+btn.addEventListener('click', copy);
+
+function fallback () {
+	window.prompt('Copy:', text);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Profile_at_54</title>
+<style>
+@import "bourbon";
+
+body {
+  font-family: Lato;
+  background: #bada55;
+}
+
+.container {
+  margin: 50px auto;
+  width: 400px;
+}
+
+a {
+  display: inline-block;
+  transition: all ease 0.3s;
+}
+
+$coverImageHeight: 300px;
+
+.profile-box {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  
+  .profile-picture {
+    position: absolute;
+    top: $coverImageHeight - 60px;
+    left: 50%;
+    margin-left: -55px;
+    
+    img {
+      border: 5px solid #fff;
+      border-radius: 100%;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.profile-cover-image {
+  height: $coverImageHeight;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+  }
+}
+
+.profile-content {
+  padding: 40px 20px;
+  text-align: center;
+  
+  h1 {
+    font-weight: normal;
+    margin-bottom: 0.2em;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #d2d2d2;
+  }
+  
+  .socials {
+    a {
+      color: #d2d2d2;
+      margin: 0 15px;
+      font-size: 1.6em;
+      transform: translateY(4px);
+      
+      &:hover {
+        color: #aaa;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+</style>
+</head>
+
+  <body>
+    <p>=.container&#13;
+  .profile-box&#13;
+    .profile-cover-image&#13;
+      img(src="http://randomuser.me/api/portraits/men/84.jpg")&#13;
+    .profile-picture&#13;
+      img(src="https://randomuser.me/api/portraits/men/84.jpg")&#13;
+    .profile-content&#13;
+      h1 John Doe&#13;
+      p Designer at Doe's Company,<br />ridiculously skilled.&#13;
+      .socials&#13;
+        a(href="#")&#13;
+          i.fa.fa-dribbble&#13;
+        a(href="#")&#13;
+          i.fa.fa-twitter&#13;
+        a(href="#")&#13;
+          i.fa.fa-github&#13;
+</p>
+<script>
+</script>
+  </body>
+</html>

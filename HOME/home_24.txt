@@ -1,0 +1,192 @@
+<html>
+<head>
+  <title>home_at_24</title>
+  <style>
+  
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+body {
+    background: transparent url("../images/bg.png") repeat scroll 0px 0px;
+    font: 16px/1.5em "PT Sans","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #444;
+}
+.logo {
+  width:19.6%;
+  height:101px;
+  display:block;
+  margin:0 auto;
+}
+.logo img {
+    display: block;
+    z-index: 100;
+    position: absolute;
+    border: 5px solid rgb(104, 104, 104);
+    width: 184px;
+    margin: -18px auto 0px;
+}
+.menu-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+}
+.menu-float {
+  float:left;
+  border-right:1px solid #7b7b7b;
+  position:relative;
+}
+.menu-wrapper ul, .menu-float ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  font-size: 16px;
+  font-weight:700;
+  overflow: hidden; 
+}
+.menu-wrapper ul li {
+  width:13.4%;
+  margin: 0;
+  text-align: center;
+  display: block;
+  float: left;
+  border-left:1px solid #424242;
+  background:#686868; 
+   -webkit-transition:background 0.2s ease-in;
+   -moz-transition:background 0.2s ease-in;
+   -o-transition:background 0.2s ease-in;
+   transition:background 0.2s ease-in;    
+}
+.contactbtn {
+  float:right;
+  position:relative;
+}
+.homebtn {
+  float:left;
+  position:relative;
+}
+.menu-float ul li, .contactbtn li, .homebtn li {
+  margin: 0;
+  text-align: center;
+  display: block;
+  float: left;
+  border-left:1px solid #7b7b7b;
+  border-right:1px solid #191919;
+  background:#686868; 
+   -webkit-transition:background 0.2s ease-in;
+   -moz-transition:background 0.2s ease-in;
+   -o-transition:background 0.2s ease-in;
+   transition:background 0.2s ease-in;  
+}
+.contactbtn li a, .homebtn li a {
+  padding:10px 19px 9px 19px;
+  display:block;
+  color:#fff; 
+    border-bottom:2px solid #424242;
+  text-shadow:1px 1px 0px #535353;
+   -webkit-transition:border 0.2s ease-in;
+   -moz-transition:border 0.2s ease-in;
+   -o-transition:border 0.2s ease-in;
+   transition:border 0.2s ease-in;    
+}
+.contactbtn img, .homebtn img {
+  width:18px;
+  height:17px;
+  display:block;
+}
+.menu-float ul li a {
+  font-size:12px;
+  text-decoration: none;  
+  text-transform:uppercase;
+  padding:10px 19px 8px 20px;
+  display:block;
+  color:#fff; 
+    border-bottom:2px solid #424242;
+  text-shadow:1px 1px 0px #535353;
+   -webkit-transition:border 0.2s ease-in;
+   -moz-transition:border 0.2s ease-in;
+   -o-transition:border 0.2s ease-in;
+   transition:border 0.2s ease-in;    
+}
+.menu-wrapper ul li:hover, .menu-float ul li:hover, .contactbtn li a:hover, .homebtn li a:hover {
+  background:#707070;
+}
+.menu-wrapper ul li.right-item {
+  float:right;
+  border-left:0 none;
+  border-right:1px solid #424242; 
+} 
+.menu-wrapper ul li.deals a {
+  background:url(http://cdn.ourtutscom.netdna-cdn.com/wp-content/themes/tuts/images/deals.png) no-repeat scroll 35px center;
+  padding-left:25px;
+}
+.menu-wrapper ul li.inspiration a { background:url(http://cdn.ourtutscom.netdna-cdn.com/wp-content/themes/tuts/images/inspiration.png) no-repeat scroll 15px center;
+  padding-left:25px;
+}
+.menu-wrapper ul li.resources a {
+  background:url(http://cdn.ourtutscom.netdna-cdn.com/wp-content/themes/tuts/images/resources.png) no-repeat scroll 18px center;
+  padding-left:26px;
+}
+.menu-wrapper ul li.articles a {  background:url(http://cdn.ourtutscom.netdna-cdn.com/wp-content/themes/tuts/images/articles.png) no-repeat scroll 24px center;
+  padding-left:25px;
+}
+.menu-wrapper ul li.tutorials a { background:url(http://cdn.ourtutscom.netdna-cdn.com/wp-content/themes/tuts/images/tutorials.png) no-repeat scroll 19px center;
+  padding-left:26px;
+}
+.menu-wrapper ul li.home a {  background:url(http://cdn.ourtutscom.netdna-cdn.com/wp-content/themes/tuts/images/home.png) no-repeat scroll 33px center;
+  padding-left:23px;
+}
+.menu-wrapper ul li a {
+  font-size:14px;
+  text-decoration: none;  
+  text-transform:uppercase;
+  padding:15px 0;
+  display:block;
+  color:#fff;
+  border-bottom:3px solid #424242;  
+  text-shadow:1px 1px 0px #535353;
+   -webkit-transition:border 0.2s ease-in;
+   -moz-transition:border 0.2s ease-in;
+   -o-transition:border 0.2s ease-in;
+   transition:border 0.2s ease-in;    
+}
+.menu-wrapper ul li:hover, .menu-float ul li:hover {
+  border-bottom:0 none;
+}
+.menu-wrapper ul li a:hover {
+  border-bottom:3px solid #fa810c;
+} 
+.menu-float ul li a:hover, .contactbtn li a:hover , .homebtn li a:hover{
+  border-bottom:2px solid #fa810c;
+}
+.container {
+    position: relative;
+    width: 1000px;
+    margin: 100px auto 0px;
+    padding: 0px;
+}
+
+</style>
+  </head>
+  <body>
+    <div class="container">
+  <div class="header">  
+    
+  <a class="logo" href="https://mastamvan.blogspot.com/p/blog-page.html">
+    <img src="http://patrickcoombe.com/wp-content/uploads/2015/09/new-google-logo-2015.png">
+  </a>
+
+  <div class="menu-wrapper"> <!--  the Menu -->
+  <div class="menu-header"><ul id="menu-top-meniu" class="menu"><li id="menu-item-4633" class="home menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4633"><a href="/">Home</a></li>
+<li id="menu-item-1006" class="tutorials menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1006"><a href="https://mastamvan.blogspot.com/p/blog-page.html">Tutorials</a></li>
+<li id="menu-item-1003" class="articles menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1003"><a href="https://mastamvan.blogspot.com/p/blog-page.html">Articles</a></li>
+<li id="menu-item-4640" class="deals right-item menu-item menu-item-type-post_type menu-item-object-page menu-item-4640"><a href="https://mastamvan.blogspot.com/p/blog-page.html">Deals</a></li>
+<li id="menu-item-1004" class="inspiration right-item menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1004"><a href="https://mastamvan.blogspot.com/p/blog-page.html">Inspiration</a></li>
+<li id="menu-item-1005" class="resources right-item menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1005"><a href="https://mastamvan.blogspot.com/p/blog-page.html">Resources</a></li>
+</ul></div> </div>
+  
+</div>
+</div>
+    <script>
+    </script>
+  </body>
+</html>
